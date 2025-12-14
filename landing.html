@@ -10,8 +10,10 @@
       href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.0.3/misc/Farsi-Digits/font-face.css"
       rel="stylesheet"
       type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.js"></script>
     <script src="tailwind.config.js"></script>
   </head>
   <body class="bg-psGray text-psText overflow-x-hidden font-sans">
@@ -251,10 +253,19 @@
 
       <div class="group relative">
         <button
-          class="hover:text-psBlue absolute -left-5 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 translate-x-4 items-center justify-center rounded-full border border-gray-100 bg-white/90 text-gray-700 opacity-0 shadow-[0_4px_20px_rgba(0,0,0,0.12)] backdrop-blur-sm transition-all duration-300 hover:scale-110 group-hover:translate-x-0 group-hover:opacity-100">
+          id="slider-next"
+          class="hover:text-psBlue absolute -left-5 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 translate-x-4 items-center justify-center rounded-full border border-gray-100 bg-white/90 text-gray-700 shadow-[0_4px_20px_rgba(0,0,0,0.12)] backdrop-blur-sm transition-all duration-300 hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <button
+          id="slider-prev"
+          class="hover:text-psBlue absolute -right-5 top-1/2 z-20 flex hidden h-12 w-12 -translate-x-4 -translate-y-1/2 items-center justify-center rounded-full border border-gray-100 bg-white/90 text-gray-700 shadow-[0_4px_20px_rgba(0,0,0,0.12)] backdrop-blur-sm transition-all duration-300 hover:scale-110">
           <svg
-            xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)"
-            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 rotate-180"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor">
@@ -262,9 +273,9 @@
           </svg>
         </button>
 
-        <div class="scrollbar-hide flex snap-x justify-between gap-4 overflow-x-auto px-1 pb-6 pt-2">
+        <div id="editor-choice-slider" class="keen-slider px-1 pb-6 pt-2">
           <div
-            class="group/card flex w-[280px] min-w-[280px] cursor-pointer snap-start flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
+            class="keen-slider__slide group/card flex  cursor-pointer flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
             <div class="relative h-[180px] overflow-hidden rounded-t-lg">
               <img
                 alt="Article"
@@ -282,19 +293,15 @@
               <div
                 class="mt-auto flex items-center justify-between border-t border-gray-100 pt-3 text-[11px] text-gray-400">
                 <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-user-pen"></i>
-                  <span>تحریریه پارین صنعت</span>
+                  <i class="fa-solid fa-user-pen"></i><span>تحریریه پارین صنعت</span>
                 </div>
-                <div class="flex items-center gap-1">
-                  <i class="fa-regular fa-clock"></i>
-                  <span>۵ دقیقه</span>
-                </div>
+                <div class="flex items-center gap-1"><i class="fa-regular fa-clock"></i><span>۵ دقیقه</span></div>
               </div>
             </div>
           </div>
 
           <div
-            class="group/card flex w-[280px] min-w-[280px] cursor-pointer snap-start flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
+            class="keen-slider__slide group/card flex  cursor-pointer flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
             <div class="relative h-[180px] overflow-hidden rounded-t-lg">
               <img
                 alt="Article"
@@ -311,20 +318,14 @@
               </h4>
               <div
                 class="mt-auto flex items-center justify-between border-t border-gray-100 pt-3 text-[11px] text-gray-400">
-                <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-user-pen"></i>
-                  <span>مهندس احمدی</span>
-                </div>
-                <div class="flex items-center gap-1">
-                  <i class="fa-regular fa-clock"></i>
-                  <span>۸ دقیقه</span>
-                </div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-user-pen"></i><span>مهندس احمدی</span></div>
+                <div class="flex items-center gap-1"><i class="fa-regular fa-clock"></i><span>۸ دقیقه</span></div>
               </div>
             </div>
           </div>
 
           <div
-            class="group/card flex w-[280px] min-w-[280px] cursor-pointer snap-start flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
+            class="keen-slider__slide group/card flex  cursor-pointer flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
             <div class="relative h-[180px] overflow-hidden rounded-t-lg">
               <img
                 alt="Article"
@@ -341,20 +342,14 @@
               </h4>
               <div
                 class="mt-auto flex items-center justify-between border-t border-gray-100 pt-3 text-[11px] text-gray-400">
-                <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-user-pen"></i>
-                  <span>مهندس کریمی</span>
-                </div>
-                <div class="flex items-center gap-1">
-                  <i class="fa-regular fa-clock"></i>
-                  <span>۶ دقیقه</span>
-                </div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-user-pen"></i><span>مهندس کریمی</span></div>
+                <div class="flex items-center gap-1"><i class="fa-regular fa-clock"></i><span>۶ دقیقه</span></div>
               </div>
             </div>
           </div>
 
           <div
-            class="group/card flex w-[280px] min-w-[280px] cursor-pointer snap-start flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
+            class="keen-slider__slide group/card flex  cursor-pointer flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
             <div class="relative h-[180px] overflow-hidden rounded-t-lg">
               <img
                 alt="Article"
@@ -371,20 +366,14 @@
               </h4>
               <div
                 class="mt-auto flex items-center justify-between border-t border-gray-100 pt-3 text-[11px] text-gray-400">
-                <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-user-pen"></i>
-                  <span>تیم فنی</span>
-                </div>
-                <div class="flex items-center gap-1">
-                  <i class="fa-regular fa-clock"></i>
-                  <span>۱۰ دقیقه</span>
-                </div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-user-pen"></i><span>تیم فنی</span></div>
+                <div class="flex items-center gap-1"><i class="fa-regular fa-clock"></i><span>۱۰ دقیقه</span></div>
               </div>
             </div>
           </div>
 
           <div
-            class="group/card flex w-[280px] min-w-[280px] cursor-pointer snap-start flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
+            class="keen-slider__slide group/card flex  cursor-pointer flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
             <div class="relative h-[180px] overflow-hidden rounded-t-lg">
               <img
                 alt="Article"
@@ -400,15 +389,131 @@
                 بهترین زمان سمپاشی درختان میوه + معرفی سمپاش‌های مناسب
               </h4>
               <div
-                class="mt-auto flex items-center justify-between border-t border-gray-100 pt-3 text-[11px] text-gray-400">
+                class="mt-auto flex items-center justify-between border-t border-gray-100 pt-3 text-[10px] text-gray-400">
+                <div class="flex items-center gap-2"><i class="fa-solid fa-user-pen"></i><span>تیم کشاورزی</span></div>
+                <div class="flex items-center gap-1"><i class="fa-regular fa-clock"></i><span>۴ دقیقه</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="keen-slider__slide group/card flex  cursor-pointer flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
+            <div class="relative h-[180px] overflow-hidden rounded-t-lg">
+              <img
+                alt="Article"
+                src="https://parinsanat.com/images/slider/hero-tools-desktop.webp"
+                class="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-105" />
+              <span class="absolute right-3 top-3 rounded-md bg-gray-600 px-2 py-1 text-[10px] font-bold text-white"
+                >صنعتی</span
+              >
+            </div>
+            <div class="flex flex-grow flex-col justify-between p-4">
+              <h4
+                class="group-hover/card:text-psBlue mb-3 line-clamp-2 text-sm font-bold leading-6 text-gray-700 transition-colors">
+                راهنمای جامع خرید کمپرسور باد؛ اسکرو یا پیستونی؟
+              </h4>
+              <div
+                class="mt-auto flex items-center justify-between border-t border-gray-100 pt-3 text-[10px] text-gray-400">
+                <div class="flex items-center gap-2"><i class="fa-solid fa-user-pen"></i><span>مهندس نوری</span></div>
+                <div class="flex items-center gap-1"><i class="fa-regular fa-clock"></i><span>۷ دقیقه</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="keen-slider__slide group/card flex  cursor-pointer flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
+            <div class="relative h-[180px] overflow-hidden rounded-t-lg">
+              <img
+                alt="Article"
+                src="https://parinsanat.com/images/banners/sunverter.gif"
+                class="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-105" />
+              <span class="absolute right-3 top-3 rounded-md bg-yellow-500 px-2 py-1 text-[10px] font-bold text-white"
+                >انرژی پاک</span
+              >
+            </div>
+            <div class="flex flex-grow flex-col justify-between p-4">
+              <h4
+                class="group-hover/card:text-psBlue mb-3 line-clamp-2 text-sm font-bold leading-6 text-gray-700 transition-colors">
+                تفاوت پنل‌های خورشیدی مونوکریستال و پلی‌کریستال
+              </h4>
+              <div
+                class="mt-auto flex items-center justify-between border-t border-gray-100 pt-3 text-[10px] text-gray-400">
+                <div class="flex items-center gap-2"><i class="fa-solid fa-user-pen"></i><span>واحد سولار</span></div>
+                <div class="flex items-center gap-1"><i class="fa-regular fa-clock"></i><span>۵ دقیقه</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="keen-slider__slide group/card flex  cursor-pointer flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
+            <div class="relative h-[180px] overflow-hidden rounded-t-lg">
+              <img
+                alt="Article"
+                src="https://parinsanat.com/images/banners/modern-agri-tools.jpg"
+                class="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-105" />
+              <span class="bg-psGreen absolute right-3 top-3 rounded-md px-2 py-1 text-[10px] font-bold text-white"
+                >باغبانی</span
+              >
+            </div>
+            <div class="flex flex-grow flex-col justify-between p-4">
+              <h4
+                class="group-hover/card:text-psBlue mb-3 line-clamp-2 text-sm font-bold leading-6 text-gray-700 transition-colors">
+                نکات ایمنی حیاتی هنگام کار با اره زنجیری بنزینی
+              </h4>
+              <div
+                class="mt-auto flex items-center justify-between border-t border-gray-100 pt-3 text-[10px] text-gray-400">
                 <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-user-pen"></i>
-                  <span>تیم کشاورزی</span>
+                  <i class="fa-solid fa-user-pen"></i><span>کارشناس ایمنی</span>
                 </div>
-                <div class="flex items-center gap-1">
-                  <i class="fa-regular fa-clock"></i>
-                  <span>۴ دقیقه</span>
-                </div>
+                <div class="flex items-center gap-1"><i class="fa-regular fa-clock"></i><span>۳ دقیقه</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="keen-slider__slide group/card flex  cursor-pointer flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
+            <div class="relative h-[180px] overflow-hidden rounded-t-lg">
+              <img
+                alt="Article"
+                src="https://parinsanat.com/images/slider/hero-tools-desktop.webp"
+                class="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-105" />
+              <span class="bg-psRed absolute right-3 top-3 rounded-md px-2 py-1 text-[10px] font-bold text-white"
+                >تخصصی</span
+              >
+            </div>
+            <div class="flex flex-grow flex-col justify-between p-4">
+              <h4
+                class="group-hover/card:text-psBlue mb-3 line-clamp-2 text-sm font-bold leading-6 text-gray-700 transition-colors">
+                تفاوت اینورترهای جوشکاری ماسفت و IGBT چیست؟
+              </h4>
+              <div
+                class="mt-auto flex items-center justify-between border-t border-gray-100 pt-3 text-[10px] text-gray-400">
+                <div class="flex items-center gap-2"><i class="fa-solid fa-user-pen"></i><span>مهندس فنی</span></div>
+                <div class="flex items-center gap-1"><i class="fa-regular fa-clock"></i><span>۹ دقیقه</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="keen-slider__slide group/card flex  cursor-pointer flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
+            <div class="relative h-[180px] overflow-hidden rounded-t-lg">
+              <img
+                alt="Article"
+                src="https://parinsanat.com/images/banners/modern-agri-tools.jpg"
+                class="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-105" />
+              <span class="absolute right-3 top-3 rounded-md bg-purple-600 px-2 py-1 text-[10px] font-bold text-white"
+                >بررسی</span
+              >
+            </div>
+            <div class="flex flex-grow flex-col justify-between p-4">
+              <h4
+                class="group-hover/card:text-psBlue mb-3 line-clamp-2 text-sm font-bold leading-6 text-gray-700 transition-colors">
+                بررسی علف‌زن دوشی و پشتی؛ کدام برای شما راحت‌تر است؟
+              </h4>
+              <div
+                class="mt-auto flex items-center justify-between border-t border-gray-100 pt-3 text-[10px] text-gray-400">
+                <div class="flex items-center gap-2"><i class="fa-solid fa-user-pen"></i><span>تیم باغبانی</span></div>
+                <div class="flex items-center gap-1"><i class="fa-regular fa-clock"></i><span>۶ دقیقه</span></div>
               </div>
             </div>
           </div>
@@ -858,5 +963,26 @@
         </div>
       </div>
     </footer>
+    <div
+      id="video-modal"
+      class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 p-4 backdrop-blur-sm transition-opacity duration-300">
+      <div class="relative w-full max-w-4xl overflow-hidden rounded-xl bg-black shadow-2xl">
+        <button
+          id="close-modal-btn"
+          class="absolute left-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur-md transition-colors hover:bg-red-600">
+          <i class="fa-solid fa-times text-xl"></i>
+        </button>
+        <div class="aspect-video w-full">
+          <iframe
+            id="video-frame"
+            src=""
+            class="h-full w-full"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/landing.js"></script>
   </body>
 </html>

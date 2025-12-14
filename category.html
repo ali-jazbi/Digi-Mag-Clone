@@ -17,7 +17,7 @@
     <header class="sticky top-0 z-50 h-[50px] bg-[#242424] font-sans shadow-md">
       <div class="mx-auto flex h-full w-[96%] max-w-[1600px] items-center justify-between">
         <div class="flex h-full items-center overflow-hidden">
-          <button class="px-3 text-white lg:hidden">
+          <button id="mobile-menu-btn" class="px-3 text-white lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
@@ -49,7 +49,7 @@
             <a href="#" class="whitespace-nowrap transition-colors hover:text-white">نمایندگی</a>
           </nav>
 
-           <div class="group relative hidden md:block">
+          <div class="group relative hidden md:block">
             <input
               type="text"
               placeholder="جستجو..."
@@ -65,6 +65,37 @@
                 stroke-width="2"
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
             </svg>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="fixed inset-0 z-[60] flex translate-x-full transition-transform duration-300 lg:hidden">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+
+        <div class="relative h-full w-64 bg-white p-6 shadow-2xl">
+          <button id="close-menu-btn" class="mb-6 flex items-center gap-2 text-sm font-bold text-red-500">
+            <i class="fa-solid fa-times"></i> بستن منو
+          </button>
+
+          <div class="mb-6">
+            <h4 class="mb-3 border-b pb-2 font-bold text-gray-800">تجهیزات صنعتی</h4>
+            <ul class="space-y-3 text-sm text-gray-600">
+              <li><a href="#">موتور و برق</a></li>
+              <li><a href="#">پمپ و آب‌رسانی</a></li>
+              <li><a href="#">ابزارآلات</a></li>
+              <li><a href="#">خرید اقساطی</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="mb-3 border-b pb-2 font-bold text-gray-800">دسترسی سریع</h4>
+            <ul class="space-y-3 text-sm text-gray-600">
+              <li><a href="#">خانه</a></li>
+              <li><a href="#">درباره ما</a></li>
+              <li><a href="#">تماس با ما</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -84,15 +115,27 @@
           <div class="flex-1">
             <div class="mb-4 flex items-center gap-3">
               <span class="text-3xl text-gray-300 md:hidden">⚙️</span>
-              <h1 class="font-bold text-2xl text-gray-800 lg:text-3xl">تجهیزات صنعتی</h1>
+              <h1 class="text-2xl font-bold text-gray-800 lg:text-3xl">تجهیزات صنعتی</h1>
             </div>
-            <p class="text-justify text-sm leading-8 text-gray-500">
+            <p
+              id="desc-text"
+              class="line-clamp-3 text-justify text-sm leading-8 text-gray-500 transition-all duration-300">
               تجهیزات صنعتی نقش حیاتی در توسعه و پیشرفت کارخانه‌ها و کارگاه‌های مختلف دارند. با پیشرفت فناوری، انتخاب
               صحیح تجهیزات برای هر نوع تولید به یکی از مهم‌ترین تصمیمات تجاری تبدیل شده است. در این بخش نقد و بررسی
               تجهیزات برتر صنعتی، راهنمای خرید، و مقایسه برندهای مختلف را مشاهده کنید. ما به شما کمک می‌کنیم بهترین
-              تجهیز را برای نیازهای خاص خود انتخاب کنید.
+              تجهیز را برای نیازهای خاص خود انتخاب کنید. پارین صنعت با بیش از ده سال تجربه در این زمینه، تلاش دارد تا با
+              ارائه اطلاعات دقیق و به‌روز، مسیر خرید و انتخاب را برای شما هموار سازد. از موتورهای برق خانگی تا
+              ژنراتورهای صنعتی سنگین، همه و همه در این دسته‌بندی پوشش داده شده‌اند. تجهیزات صنعتی نقش حیاتی در توسعه و
+              پیشرفت کارخانه‌ها و کارگاه‌های مختلف دارند. با پیشرفت فناوری، انتخاب صحیح تجهیزات برای هر نوع تولید به یکی
+              از مهم‌ترین تصمیمات تجاری تبدیل شده است. در این بخش نقد و بررسی تجهیزات برتر صنعتی، راهنمای خرید، و مقایسه
+              برندهای مختلف را مشاهده کنید. ما به شما کمک می‌کنیم بهترین تجهیز را برای نیازهای خاص خود انتخاب کنید.
+              پارین صنعت با بیش از ده سال تجربه در این زمینه، تلاش دارد تا با ارائه اطلاعات دقیق و به‌روز، مسیر خرید و
+              انتخاب را برای شما هموار سازد. از موتورهای برق خانگی تا ژنراتورهای صنعتی سنگین، همه و همه در این دسته‌بندی
+              پوشش داده شده‌اند.
             </p>
-            <button class="text-psBlue mt-4 flex items-center gap-1 text-xs font-bold hover:underline">
+            <button
+              id="toggle-desc-btn"
+              class="text-psBlue mt-4 flex items-center gap-1 text-xs font-bold hover:underline">
               نمایش کامل
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -120,11 +163,11 @@
 
         <div
           class="order-1 mb-4 flex w-full items-center justify-between gap-6 md:order-2 md:mb-0 md:w-auto md:justify-end">
-          <div class="group relative flex cursor-pointer items-center gap-2">
+          <div class="custom-dropdown group relative flex cursor-pointer items-center gap-2">
             <span class="text-xs text-gray-400">مرتب‌سازی:</span>
             <div
-              class="flex items-center gap-1 rounded border border-gray-200 bg-white px-3 py-1.5 text-xs font-bold text-gray-700 transition-colors hover:border-gray-400">
-              جدیدترین
+              class="dropdown-trigger flex items-center gap-1 rounded border border-gray-200 bg-white px-3 py-1.5 text-xs font-bold text-gray-700 transition-colors hover:border-gray-400">
+              <span>جدیدترین</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-3 w-3 text-gray-400"
@@ -136,16 +179,21 @@
             </div>
             <div
               class="absolute right-0 top-full z-10 mt-1 hidden w-32 rounded-lg border border-gray-100 bg-white shadow-lg group-hover:block">
-              <a href="#" class="hover:text-psBlue block px-4 py-2 text-xs hover:bg-gray-50">جدیدترین</a>
-              <a href="#" class="hover:text-psBlue block px-4 py-2 text-xs hover:bg-gray-50">پردیدگاه‌ترین</a>
+              <a href="#" class="dropdown-item hover:text-psBlue block px-4 py-2 text-xs hover:bg-gray-50">جدیدترین</a>
+              <a href="#" class="dropdown-item hover:text-psBlue block px-4 py-2 text-xs hover:bg-gray-50"
+                >پردیدگاه‌ترین</a
+              >
+              <a href="#" class="dropdown-item hover:text-psBlue block px-4 py-2 text-xs hover:bg-gray-50"
+                >محبوب‌ترین</a
+              >
             </div>
           </div>
 
-          <div class="group relative flex cursor-pointer items-center gap-2">
+          <div class="custom-dropdown group relative flex cursor-pointer items-center gap-2">
             <span class="text-xs text-gray-400">نوع:</span>
             <div
-              class="flex items-center gap-1 rounded border border-gray-200 bg-white px-3 py-1.5 text-xs font-bold text-gray-700 transition-colors hover:border-gray-400">
-              همه
+              class="dropdown-trigger flex items-center gap-1 rounded border border-gray-200 bg-white px-3 py-1.5 text-xs font-bold text-gray-700 transition-colors hover:border-gray-400">
+              <span>همه</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-3 w-3 text-gray-400"
@@ -157,9 +205,9 @@
             </div>
             <div
               class="absolute right-0 top-full z-10 mt-1 hidden w-24 rounded-lg border border-gray-100 bg-white shadow-lg group-hover:block">
-              <a href="#" class="hover:text-psBlue block px-4 py-2 text-xs hover:bg-gray-50">همه</a>
-              <a href="#" class="hover:text-psBlue block px-4 py-2 text-xs hover:bg-gray-50">ویدیو</a>
-              <a href="#" class="hover:text-psBlue block px-4 py-2 text-xs hover:bg-gray-50">متن</a>
+              <a href="#" class="dropdown-item hover:text-psBlue block px-4 py-2 text-xs hover:bg-gray-50">همه</a>
+              <a href="#" class="dropdown-item hover:text-psBlue block px-4 py-2 text-xs hover:bg-gray-50">ویدیو</a>
+              <a href="#" class="dropdown-item hover:text-psBlue block px-4 py-2 text-xs hover:bg-gray-50">متن</a>
             </div>
           </div>
         </div>
@@ -174,7 +222,8 @@
               class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div class="flex h-[140px] flex-col justify-between p-4">
-            <h2 class="group-hover:text-psBlue line-clamp-3 text-xs font-bold leading-6 text-gray-700 transition-colors">
+            <h2
+              class="group-hover:text-psBlue line-clamp-3 text-xs font-bold leading-6 text-gray-700 transition-colors">
               راهنمای خرید بهترین موتور برق خانگی و صنعتی
             </h2>
             <div
@@ -198,7 +247,8 @@
               class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div class="flex h-[140px] flex-col justify-between p-4">
-            <h2 class="group-hover:text-psBlue line-clamp-3 text-xs font-bold leading-6 text-gray-700 transition-colors">
+            <h2
+              class="group-hover:text-psBlue line-clamp-3 text-xs font-bold leading-6 text-gray-700 transition-colors">
               نقد و بررسی پمپ آب شارژی؛ قوی در دستان
             </h2>
             <div
@@ -222,7 +272,8 @@
               class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div class="flex h-[140px] flex-col justify-between p-4">
-            <h2 class="group-hover:text-psBlue line-clamp-3 text-xs font-bold leading-6 text-gray-700 transition-colors">
+            <h2
+              class="group-hover:text-psBlue line-clamp-3 text-xs font-bold leading-6 text-gray-700 transition-colors">
               تفاوت پمپ آب جتی و بشقابی؛ کدام برای باغ مناسب است
             </h2>
             <div
@@ -246,7 +297,8 @@
               class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div class="flex h-[140px] flex-col justify-between p-4">
-            <h2 class="group-hover:text-psBlue line-clamp-3 text-xs font-bold leading-6 text-gray-700 transition-colors">
+            <h2
+              class="group-hover:text-psBlue line-clamp-3 text-xs font-bold leading-6 text-gray-700 transition-colors">
               دیزل ژنراتورهای پرفروش; کدام را بخریم؟
             </h2>
             <div
@@ -270,7 +322,8 @@
               class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div class="flex h-[140px] flex-col justify-between p-4">
-            <h2 class="group-hover:text-psBlue line-clamp-3 text-xs font-bold leading-6 text-gray-700 transition-colors">
+            <h2
+              class="group-hover:text-psBlue line-clamp-3 text-xs font-bold leading-6 text-gray-700 transition-colors">
               موتور برق بی صدا؛ راهنمای خریداران
             </h2>
             <div
@@ -294,7 +347,8 @@
               class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div class="flex h-[140px] flex-col justify-between p-4">
-            <h2 class="group-hover:text-psBlue line-clamp-3 text-xs font-bold leading-6 text-gray-700 transition-colors">
+            <h2
+              class="group-hover:text-psBlue line-clamp-3 text-xs font-bold leading-6 text-gray-700 transition-colors">
               بهترین پمپ‌های صنعتی; برتری و مشخصات
             </h2>
             <div
@@ -318,7 +372,8 @@
               class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div class="flex h-[140px] flex-col justify-between p-4">
-            <h2 class="group-hover:text-psBlue line-clamp-3 text-xs font-bold leading-6 text-gray-700 transition-colors">
+            <h2
+              class="group-hover:text-psBlue line-clamp-3 text-xs font-bold leading-6 text-gray-700 transition-colors">
               دریل بتن کن رونیکس؛ غول تخریب در دستان شما
             </h2>
             <div
@@ -342,7 +397,8 @@
               class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div class="flex h-[140px] flex-col justify-between p-4">
-            <h2 class="group-hover:text-psBlue line-clamp-3 text-xs font-bold leading-6 text-gray-700 transition-colors">
+            <h2
+              class="group-hover:text-psBlue line-clamp-3 text-xs font-bold leading-6 text-gray-700 transition-colors">
               آخر هفته تجهیزات صنعتی از پارین صنعت
             </h2>
             <div
@@ -360,7 +416,7 @@
       </div>
 
       <div class="mt-16 flex items-center justify-center gap-2 text-sm font-bold">
-        <span class=\"bg-psBlue flex h-8 w-8 cursor-default items-center justify-center rounded text-white\">۱</span>
+        <span class="bg-psBlue text-white\ flex h-8 w-8 cursor-default items-center justify-center rounded">۱</span>
         <a
           href="#"
           class="flex h-8 w-8 items-center justify-center rounded border border-gray-200 bg-white text-gray-500 transition-colors hover:border-gray-400"
@@ -403,22 +459,22 @@
             <div class="flex gap-3">
               <a
                 href="#"
-                class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-psBlue">
+                class="hover:bg-psBlue flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-colors">
                 <i class="fa-brands fa-telegram text-lg"></i>
               </a>
               <a
                 href="#"
-                class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-psBlue">
+                class="hover:bg-psBlue flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-colors">
                 <i class="fa-brands fa-instagram text-lg"></i>
               </a>
               <a
                 href="#"
-                class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-psBlue">
+                class="hover:bg-psBlue flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-colors">
                 <i class="fa-brands fa-linkedin text-lg"></i>
               </a>
               <a
                 href="#"
-                class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-psBlue">
+                class="hover:bg-psBlue flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-colors">
                 <i class="fa-brands fa-whatsapp text-lg"></i>
               </a>
             </div>
@@ -458,10 +514,12 @@
         </div>
         <div class="border-t border-white/10 pt-8 text-center text-xs text-gray-400">
           <p>
-            © کلیه حقوق مادی و معنوی این سایت متعلق به شرکت پارین صنعت پاسارگاد می‌باشد. هرگونه کپی‌برداری بدون کسب مجوز ممنوع است.
+            © کلیه حقوق مادی و معنوی این سایت متعلق به شرکت پارین صنعت پاسارگاد می‌باشد. هرگونه کپی‌برداری بدون کسب مجوز
+            ممنوع است.
           </p>
         </div>
       </div>
     </footer>
+    <script src="assets/js/category.js"></script>
   </body>
 </html>
