@@ -2,7 +2,9 @@ tailwind.config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Vazirmatn", "sans-serif"],
+        sans: ["yekanbakh", "Vazirmatn", "sans-serif"],
+        bold: ["yekanbakh-bold", "Vazirmatn", "sans-serif"],
+        semibold: ["yekanbakh-semibold", "Vazirmatn", "sans-serif"],
       },
       colors: {
         psBlue: "#0ea5e9",

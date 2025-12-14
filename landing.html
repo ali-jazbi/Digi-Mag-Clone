@@ -20,8 +20,8 @@
     </div>
 
     <div class="mx-auto mt-6 w-[80%] max-w-[1600px]">
-      <div class="grid grid-cols-12 gap-6">
-        <aside class="col-span-12 hidden h-full flex-col gap-6 lg:col-span-3 lg:flex">
+      <div class="grid grid-cols-12 items-start gap-6">
+        <aside class="col-span-12 hidden flex-col gap-6 lg:sticky lg:top-6 lg:col-span-3 lg:flex">
           <div class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
             <div class="bg-psBlue relative flex h-[70px] items-center justify-center overflow-hidden">
               <div class="absolute -left-4 -top-4 h-16 w-16 rounded-full bg-white/10"></div>
@@ -90,20 +90,11 @@
           </div>
 
           <div
-            class="bg-psBlue flex flex-1 cursor-pointer flex-col overflow-hidden rounded-lg shadow-sm transition-shadow hover:shadow-md">
+            class="bg-psBlue cursor-pointer overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow hover:shadow-md">
             <div
-              class="relative flex h-full w-full flex-col items-center justify-center bg-[#0ea5e9] p-6 text-center text-white">
-              <h3 class="mb-2 text-3xl font-black">PSP</h3>
+              class="relative flex h-[93px] w-full flex-col items-center justify-center bg-[#0ea5e9] p-6 text-center text-white">
               <h4 class="mb-4 text-xl font-bold">باشگاه مشتریان</h4>
               <p class="text-sm opacity-90">تخفیف‌های همکاری و سازمانی</p>
-              <div class="absolute bottom-4 flex gap-2">
-                <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-white/20"
-                  ><i class="fa-solid fa-headset"></i
-                ></span>
-                <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-white/20"
-                  ><i class="fa-solid fa-handshake"></i
-                ></span>
-              </div>
             </div>
           </div>
         </aside>
@@ -434,82 +425,122 @@
 
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-12">
         <div class="flex h-full flex-col lg:col-span-4">
-          <div class="rounded-lg bg-[#fcfcfc]">
-            <div class="flex flex-col">
+          <div class="rounded-lg border border-gray-100 bg-white shadow-sm">
+            <div class="flex flex-col divide-y divide-gray-100">
               <div
-                class="border-psBlue group flex cursor-pointer items-start justify-between border-r-4 bg-gray-50 p-4 transition-colors hover:bg-gray-100">
+                class="border-psBlue group flex cursor-pointer items-start justify-between border-r-4 p-4 transition-all hover:bg-gray-50">
                 <div class="flex-grow pl-3">
                   <h4
-                    class="group-hover:text-psBlue line-clamp-2 text-xs font-bold leading-6 text-gray-700 transition-colors">
+                    class="group-hover:text-psBlue line-clamp-2 text-sm font-bold leading-7 text-gray-800 transition-colors">
                     راهنمای کامل انتخاب موتور برق؛ از خانگی تا صنعتی
                   </h4>
-                  <div class="mt-2 flex items-center gap-2 text-[11px] text-gray-400">
+                  <div class="mt-2 flex items-center gap-2 text-xs text-gray-400">
                     <i class="fa-regular fa-clock"></i>
-                    <span>۱۲ دقیقه مطالعه</span>
+                    <span>۱۲ دقیقه</span>
                     <span class="mx-1">•</span>
                     <span>۲ روز پیش</span>
                   </div>
                 </div>
                 <div
-                  class="relative h-[58px] w-[86px] flex-shrink-0 overflow-hidden rounded border border-gray-100 bg-white">
+                  class="relative h-[64px] w-[90px] flex-shrink-0 overflow-hidden rounded border border-gray-100 bg-white">
                   <img
                     alt="image"
                     src="https://parinsanat.com/images/slider/hero-motor-silent-desktop.webp"
-                    class="h-full w-full object-cover" />
+                    class="h-full w-full object-cover transition-transform group-hover:scale-105" />
                 </div>
               </div>
 
-              <div class="flex justify-center py-2 text-xs tracking-widest text-gray-300">...</div>
-
               <div
-                class="group flex cursor-pointer items-start justify-between border-r-4 border-transparent p-4 transition-colors hover:border-gray-300 hover:bg-gray-50">
+                class="group flex cursor-pointer items-start justify-between border-r-4 border-transparent p-4 transition-all hover:border-gray-300 hover:bg-gray-50">
                 <div class="flex-grow pl-3">
                   <h4
-                    class="group-hover:text-psBlue line-clamp-2 text-xs font-bold leading-6 text-gray-600 transition-colors">
+                    class="group-hover:text-psBlue line-clamp-2 text-sm font-bold leading-7 text-gray-700 transition-colors">
                     نحوه نگهداری از کارواش صنعتی برای افزایش طول عمر
                   </h4>
-                  <div class="mt-2 flex items-center gap-2 text-[11px] text-gray-400">
+                  <div class="mt-2 flex items-center gap-2 text-xs text-gray-400">
                     <i class="fa-regular fa-clock"></i>
-                    <span>۸ دقیقه مطالعه</span>
+                    <span>۸ دقیقه</span>
                     <span class="mx-1">•</span>
                     <span>۱ هفته قبل</span>
                   </div>
                 </div>
                 <div
-                  class="relative h-[58px] w-[86px] flex-shrink-0 overflow-hidden rounded border border-gray-100 bg-white">
+                  class="relative h-[64px] w-[90px] flex-shrink-0 overflow-hidden rounded border border-gray-100 bg-white">
                   <img
                     alt="image"
                     src="https://parinsanat.com/images/slider/hero-tools-desktop.webp"
-                    class="h-full w-full object-cover" />
+                    class="h-full w-full object-cover transition-transform group-hover:scale-105" />
                 </div>
               </div>
 
-              <div class="flex justify-center py-2 text-xs tracking-widest text-gray-300">...</div>
-
               <div
-                class="group flex cursor-pointer items-start justify-between border-r-4 border-transparent p-4 transition-colors hover:border-gray-300 hover:bg-gray-50">
+                class="group flex cursor-pointer items-start justify-between border-r-4 border-transparent p-4 transition-all hover:border-gray-300 hover:bg-gray-50">
                 <div class="flex-grow pl-3">
                   <h4
-                    class="group-hover:text-psBlue line-clamp-2 text-xs font-bold leading-6 text-gray-600 transition-colors">
+                    class="group-hover:text-psBlue line-clamp-2 text-sm font-bold leading-7 text-gray-700 transition-colors">
                     ۵ نکته مهم در انتخاب پمپ آب برای آبیاری باغ و مزرعه
                   </h4>
-                  <div class="mt-2 flex items-center gap-2 text-[11px] text-gray-400">
+                  <div class="mt-2 flex items-center gap-2 text-xs text-gray-400">
                     <i class="fa-regular fa-clock"></i>
-                    <span>۶ دقیقه مطالعه</span>
+                    <span>۶ دقیقه</span>
                     <span class="mx-1">•</span>
                     <span>۲ هفته قبل</span>
                   </div>
                 </div>
                 <div
-                  class="relative h-[58px] w-[86px] flex-shrink-0 overflow-hidden rounded border border-gray-100 bg-white">
+                  class="relative h-[64px] w-[90px] flex-shrink-0 overflow-hidden rounded border border-gray-100 bg-white">
                   <img
                     alt="image"
                     src="https://parinsanat.com/images/slider/hero-water-pump-desktop.webp"
-                    class="h-full w-full object-cover" />
+                    class="h-full w-full object-cover transition-transform group-hover:scale-105" />
                 </div>
               </div>
 
-              <div class="flex justify-center py-2 text-xs tracking-widest text-gray-300">...</div>
+              <div
+                class="group flex cursor-pointer items-start justify-between border-r-4 border-transparent p-4 transition-all hover:border-gray-300 hover:bg-gray-50">
+                <div class="flex-grow pl-3">
+                  <h4
+                    class="group-hover:text-psBlue line-clamp-2 text-sm font-bold leading-7 text-gray-700 transition-colors">
+                    مقایسه بهترین برندهای دیزل ژنراتور در بازار ایران
+                  </h4>
+                  <div class="mt-2 flex items-center gap-2 text-xs text-gray-400">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>۹ دقیقه</span>
+                    <span class="mx-1">•</span>
+                    <span>۳ هفته قبل</span>
+                  </div>
+                </div>
+                <div
+                  class="relative h-[64px] w-[90px] flex-shrink-0 overflow-hidden rounded border border-gray-100 bg-white">
+                  <img
+                    alt="image"
+                    src="https://parinsanat.com/images/banners/home-installment-desktop.webp"
+                    class="h-full w-full object-cover transition-transform group-hover:scale-105" />
+                </div>
+              </div>
+
+              <div
+                class="group flex cursor-pointer items-start justify-between border-r-4 border-transparent p-4 transition-all hover:border-gray-300 hover:bg-gray-50">
+                <div class="flex-grow pl-3">
+                  <h4
+                    class="group-hover:text-psBlue line-clamp-2 text-sm font-bold leading-7 text-gray-700 transition-colors">
+                    بهترین زمان سمپاشی درختان میوه و معرفی دستگاه‌ها
+                  </h4>
+                  <div class="mt-2 flex items-center gap-2 text-xs text-gray-400">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>۷ دقیقه</span>
+                    <span class="mx-1">•</span>
+                    <span>۱ ماه قبل</span>
+                  </div>
+                </div>
+                <div
+                  class="relative h-[64px] w-[90px] flex-shrink-0 overflow-hidden rounded border border-gray-100 bg-white">
+                  <img
+                    alt="image"
+                    src="https://parinsanat.com/images/banners/modern-agri-tools.jpg"
+                    class="h-full w-full object-cover transition-transform group-hover:scale-105" />
+                </div>
+              </div>
             </div>
           </div>
 

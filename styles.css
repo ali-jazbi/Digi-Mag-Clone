@@ -1,8 +1,45 @@
 /* ============================================
    Parin Sanat Shared Styles
    ============================================ */
+/* add 3 new local font */
+@font-face {
+  font-family: "yekanbakh";
+  src: url("./assets/font/YekanBakh-Regular.woff2") format("woff2");
+  font-style: normal;
+}
+@font-face {
+  font-family: "yekanbakh-bold";
+  src: url("./assets/font/YekanBakh-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "yekanbakh-semibold";
+  src: url("./assets/font/YekanBakh-SemiBold.woff2") format("woff2");
+  font-style: normal;
+}
 
-/* Scrollbar Hide Utility */
+/* ============================================
+   Font Utilities
+   ============================================ */
+
+.font-yekanbakh {
+  font-family: "yekanbakh", "Vazirmatn", sans-serif;
+}
+
+.font-yekanbakh-bold {
+  font-family: "yekanbakh-bold", "Vazirmatn", sans-serif;
+  font-weight: bold;
+}
+
+.font-yekanbakh-semibold {
+  font-family: "yekanbakh-semibold", "Vazirmatn", sans-serif;
+  font-weight: 600;
+}
+
+/* ============================================
+   Scrollbar Hide Utility
+   ============================================ */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
