@@ -1,177 +1,108 @@
 <!doctype html>
+
 <html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mag Wide Hero</title>
+    <title>پارین صنعت پاسارگاد | فروشگاه تجهیزات صنعتی</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.0.3/misc/Farsi-Digits/font-face.css"
       rel="stylesheet"
       type="text/css" />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ["Vazirmatn", "sans-serif"],
-            },
-            colors: {
-              dkBlue: "#009ec9",
-              dkRed: "#ef394e",
-              dkTech: "#00a0b0",
-              dkGame: "#6d1c5e",
-              dkArt: "#fec465",
-              dkStyle: "#029a49",
-              dkHome: "#227669",
-              dkFood: "#ef394e",
-            },
-            screens: {
-              "3xl": "1600px",
-            },
-          },
-        },
-      };
-    </script>
-    <style>
-      /* استایل‌های اختصاصی برای هاور منو */
-      .menu-item {
-        transition: all 0.2s ease-in-out;
-      }
-
-      .menu-item:hover .icon-box {
-        color: white;
-      }
-      .menu-item:hover .text-label {
-        color: white;
-        padding-right: 8px;
-      }
-
-      /* رنگ‌های اختصاصی هاور برای هر دسته‌بندی */
-      .hover-tech:hover {
-        background-color: #00a0b0;
-      }
-      .hover-tech:hover .icon-box {
-        background-color: rgba(255, 255, 255, 0.2);
-      }
-
-      .hover-game:hover {
-        background-color: #6d1c5e;
-      }
-      .hover-game:hover .icon-box {
-        background-color: rgba(255, 255, 255, 0.2);
-      }
-
-      .hover-art:hover {
-        background-color: #fec465;
-      }
-      .hover-art:hover .icon-box {
-        background-color: rgba(255, 255, 255, 0.2);
-      }
-
-      .hover-style:hover {
-        background-color: #029a49;
-      }
-      .hover-style:hover .icon-box {
-        background-color: rgba(255, 255, 255, 0.2);
-      }
-
-      .hover-home:hover {
-        background-color: #227669;
-      }
-      .hover-home:hover .icon-box {
-        background-color: rgba(255, 255, 255, 0.2);
-      }
-
-      .hover-food:hover {
-        background-color: #ef394e;
-      }
-      .hover-food:hover .icon-box {
-        background-color: rgba(255, 255, 255, 0.2);
-      }
-    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="tailwind.config.js"></script>
   </head>
-  <body class="overflow-x-hidden bg-[#fcfcfc] font-sans text-gray-700">
+  <body class="bg-psGray text-psText overflow-x-hidden font-sans">
+    <div class="bg-psBlue/10 text-psBlue w-full p-2 text-center text-xs font-bold md:text-sm">
+      فروش ویژه تجهیزات صنعتی با اقساط بلند مدت | مشاوره رایگان: ۰۲۱۳۱۷۲۸
+    </div>
+
     <div class="mx-auto mt-6 w-[80%] max-w-[1600px]">
       <div class="grid grid-cols-12 gap-6">
         <aside class="col-span-12 hidden h-full flex-col gap-6 lg:col-span-3 lg:flex">
           <div class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-            <div class="bg-dkBlue relative flex h-[70px] items-center justify-center overflow-hidden">
+            <div class="bg-psBlue relative flex h-[70px] items-center justify-center overflow-hidden">
               <div class="absolute -left-4 -top-4 h-16 w-16 rounded-full bg-white/10"></div>
-              <span class="relative z-10 text-3xl font-black tracking-tighter text-white">digikala mag</span>
+              <span class="relative z-10 text-2xl font-black tracking-tighter text-white">Parin Sanat</span>
             </div>
 
             <nav class="flex flex-col text-sm font-bold text-gray-500">
               <a href="#" class="menu-item flex items-center gap-4 border-b border-gray-50 px-5 py-4 hover:bg-gray-50">
-                <span class="icon-box flex h-6 w-6 items-center justify-center text-gray-400 transition-colors"
-                  >📄</span
-                >
-                <span class="text-label transition-all">جدیدترین مطالب</span>
+                <span class="icon-box flex h-6 w-6 items-center justify-center rounded text-gray-400 transition-colors"
+                  ><i class="fa-solid fa-bolt"></i
+                ></span>
+                <span class="text-label transition-all">تجهیزات تامین برق</span>
               </a>
 
-              <a href="#" class="menu-item hover-tech flex items-center gap-4 border-b border-gray-50 px-5 py-4">
+              <a href="#" class="menu-item flex items-center gap-4 border-b border-gray-50 px-5 py-4 hover:bg-gray-50">
                 <span class="icon-box flex h-6 w-6 items-center justify-center rounded text-gray-400 transition-colors"
-                  >📱</span
-                >
-                <span class="text-label transition-all">تکنولوژی و کالای دیجیتال</span>
+                  ><i class="fa-solid fa-water"></i
+                ></span>
+                <span class="text-label transition-all">پمپ و تجهیزات آبرسانی</span>
               </a>
 
-              <a href="#" class="menu-item hover-game flex items-center gap-4 border-b border-gray-50 px-5 py-4">
+              <a href="#" class="menu-item flex items-center gap-4 border-b border-gray-50 px-5 py-4 hover:bg-gray-50">
                 <span class="icon-box flex h-6 w-6 items-center justify-center rounded text-gray-400 transition-colors"
-                  >🎮</span
-                >
-                <span class="text-label transition-all">بازی و سرگرمی</span>
+                  ><i class="fa-solid fa-tractor"></i
+                ></span>
+                <span class="text-label transition-all">تجهیزات کشاورزی</span>
               </a>
 
-              <a href="#" class="menu-item hover-art flex items-center gap-4 border-b border-gray-50 px-5 py-4">
+              <a href="#" class="menu-item flex items-center gap-4 border-b border-gray-50 px-5 py-4 hover:bg-gray-50">
                 <span class="icon-box flex h-6 w-6 items-center justify-center rounded text-gray-400 transition-colors"
-                  >🎨</span
-                >
-                <span class="text-label transition-all">هنر و کتاب</span>
+                  ><i class="fa-solid fa-solar-panel"></i
+                ></span>
+                <span class="text-label transition-all">تجهیزات خورشیدی</span>
               </a>
 
-              <a href="#" class="menu-item hover-style flex items-center gap-4 border-b border-gray-50 px-5 py-4">
+              <a href="#" class="menu-item flex items-center gap-4 border-b border-gray-50 px-5 py-4 hover:bg-gray-50">
                 <span class="icon-box flex h-6 w-6 items-center justify-center rounded text-gray-400 transition-colors"
-                  >👕</span
-                >
-                <span class="text-label transition-all">مد و سبک زندگی</span>
+                  ><i class="fa-solid fa-hammer"></i
+                ></span>
+                <span class="text-label transition-all">ابزارآلات دستی</span>
               </a>
 
-              <a href="#" class="menu-item hover-home flex items-center gap-4 border-b border-gray-50 px-5 py-4">
+              <a href="#" class="menu-item flex items-center gap-4 border-b border-gray-50 px-5 py-4 hover:bg-gray-50">
                 <span class="icon-box flex h-6 w-6 items-center justify-center rounded text-gray-400 transition-colors"
-                  >🏠</span
-                >
-                <span class="text-label transition-all">خانه و دکوراسیون</span>
+                  ><i class="fa-solid fa-industry"></i
+                ></span>
+                <span class="text-label transition-all">تجهیزات صنعتی</span>
               </a>
 
-              <a href="#" class="menu-item hover-food flex items-center gap-4 px-5 py-4">
+              <a href="#" class="menu-item flex items-center gap-4 px-5 py-4 hover:bg-gray-50">
                 <span class="icon-box flex h-6 w-6 items-center justify-center rounded text-gray-400 transition-colors"
-                  >🍳</span
-                >
-                <span class="text-label transition-all">آشپزی و تغذیه</span>
+                  ><i class="fa-solid fa-percent"></i
+                ></span>
+                <span class="text-label transition-all">فروش ویژه و حراج</span>
               </a>
 
               <div class="bg-gray-50 p-1">
                 <a
                   href="#"
-                  class="text-dkRed flex items-center justify-center gap-2 rounded py-3 shadow-sm transition-colors hover:bg-white">
-                  <span class="text-sm font-bold">فروشگاه اینترنتی دیجی‌کالا</span>
-                  <span class="text-lg">›</span>
+                  class="text-psBlue flex items-center justify-center gap-2 rounded py-3 shadow-sm transition-colors hover:bg-white">
+                  <span class="text-sm font-bold">ورود به پنل کاربری</span>
+                  <span class="text-lg"><i class="fa-solid fa-arrow-left"></i></span>
                 </a>
               </div>
             </nav>
           </div>
 
           <div
-            class="bg-dkBlue flex flex-1 cursor-pointer flex-col overflow-hidden rounded-lg shadow-sm transition-shadow hover:shadow-md">
+            class="bg-psBlue flex flex-1 cursor-pointer flex-col overflow-hidden rounded-lg shadow-sm transition-shadow hover:shadow-md">
             <div
-              class="relative flex h-full w-full flex-col items-center justify-center bg-[#009ec9] p-6 text-center text-white">
-              <h3 class="mb-2 text-3xl font-black">MAG</h3>
-              <h4 class="mb-4 text-xl font-bold">دیجی‌کالا مگ پلاس</h4>
-              <p class="text-sm opacity-90">راهنمای خرید و سرگرمی</p>
+              class="relative flex h-full w-full flex-col items-center justify-center bg-[#0ea5e9] p-6 text-center text-white">
+              <h3 class="mb-2 text-3xl font-black">PSP</h3>
+              <h4 class="mb-4 text-xl font-bold">باشگاه مشتریان</h4>
+              <p class="text-sm opacity-90">تخفیف‌های همکاری و سازمانی</p>
               <div class="absolute bottom-4 flex gap-2">
-                <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-white/20">📷</span>
-                <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-white/20">🎲</span>
+                <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-white/20"
+                  ><i class="fa-solid fa-headset"></i
+                ></span>
+                <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-white/20"
+                  ><i class="fa-solid fa-handshake"></i
+                ></span>
               </div>
             </div>
           </div>
@@ -180,40 +111,40 @@
         <main class="col-span-12 flex flex-col gap-5 lg:col-span-9">
           <div class="flex flex-wrap items-center justify-between gap-4 py-2 md:flex-nowrap">
             <div class="scrollbar-hide flex w-full items-center gap-3 overflow-x-auto text-xs md:w-auto">
-              <span class="ml-2 whitespace-nowrap font-bold text-gray-400">هشتگ‌های داغ :</span>
+              <span class="ml-2 whitespace-nowrap font-bold text-gray-400">جستجوهای پرطرفدار:</span>
 
               <a
                 href="#"
-                class="hover:text-dkBlue whitespace-nowrap rounded-full bg-gray-100 px-3 py-1.5 text-gray-600 transition-colors hover:bg-gray-200"
-                >#سینمای جهان</a
+                class="hover:text-psBlue whitespace-nowrap rounded-full bg-gray-100 px-3 py-1.5 text-gray-600 transition-colors hover:bg-gray-200"
+                >#موتور برق راتو</a
               >
               <a
                 href="#"
-                class="hover:text-dkBlue whitespace-nowrap rounded-full bg-gray-100 px-3 py-1.5 text-gray-600 transition-colors hover:bg-gray-200"
-                >#گوگل</a
+                class="hover:text-psBlue whitespace-nowrap rounded-full bg-gray-100 px-3 py-1.5 text-gray-600 transition-colors hover:bg-gray-200"
+                >#پمپ آب خانگی</a
               >
               <a
                 href="#"
-                class="hover:text-dkBlue whitespace-nowrap rounded-full bg-gray-100 px-3 py-1.5 text-gray-600 transition-colors hover:bg-gray-200"
-                >#گوشی هوشمند</a
+                class="hover:text-psBlue whitespace-nowrap rounded-full bg-gray-100 px-3 py-1.5 text-gray-600 transition-colors hover:bg-gray-200"
+                >#دریل شارژی</a
               >
               <a
                 href="#"
-                class="hover:text-dkBlue whitespace-nowrap rounded-full bg-gray-100 px-3 py-1.5 text-gray-600 transition-colors hover:bg-gray-200"
-                >#هوش مصنوعی</a
+                class="hover:text-psBlue whitespace-nowrap rounded-full bg-gray-100 px-3 py-1.5 text-gray-600 transition-colors hover:bg-gray-200"
+                >#دیزل ژنراتور</a
               >
               <a
                 href="#"
-                class="hover:text-dkBlue whitespace-nowrap rounded-full bg-gray-100 px-3 py-1.5 text-gray-600 transition-colors hover:bg-gray-200"
-                >#سامانه</a
+                class="hover:text-psBlue whitespace-nowrap rounded-full bg-gray-100 px-3 py-1.5 text-gray-600 transition-colors hover:bg-gray-200"
+                >#علف تراش</a
               >
             </div>
 
             <div class="group relative hidden md:block">
               <input
                 type="text"
-                placeholder="جستجو..."
-                class="focus:ring-dkRed w-48 rounded-full bg-gray-100 px-4 py-2 text-xs outline-none transition-all focus:w-64 focus:bg-white focus:ring-1" />
+                placeholder="جستجو در محصولات..."
+                class="focus:ring-psBlue w-48 rounded-full bg-gray-100 px-4 py-2 text-xs outline-none transition-all focus:w-64 focus:bg-white focus:ring-1" />
               <svg
                 class="absolute left-3 top-2.5 h-4 w-4 text-gray-400"
                 fill="none"
@@ -230,26 +161,27 @@
 
           <div class="w-full overflow-hidden rounded-xl shadow-sm transition-shadow hover:shadow-md">
             <img
-              src="https://www.digikala.com/mag/wp-content/uploads/2025/10/1536x195.jpg"
-              class="h-auto min-h-[160px] w-full object-cover"
-              alt="Matbakh Banner" />
+              alt="Industrial Banner"
+              src="https://parinsanat.com/images/psp-top-banner.gif"
+              class="h-auto min-h-[60px] w-full object-cover" />
           </div>
 
           <div class="grid h-auto grid-cols-1 gap-1 md:h-[500px] md:grid-cols-12">
             <div
               class="group relative h-64 cursor-pointer overflow-hidden rounded-r-lg md:col-span-5 md:h-full md:rounded-r-none md:rounded-s-sm">
               <img
-                src="https://www.digikala.com/mag/wp-content/uploads/2025/08/رنگ-سال-2026-9.jpg"
+                alt="image"
+                src="https://parinsanat.com/images/slider/hero-motor-silent-desktop.webp"
                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
 
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90"></div>
 
               <div class="absolute bottom-0 right-0 w-full p-6 text-white">
                 <span class="mb-2 inline-block rounded bg-white/20 px-2 py-1 text-[10px] font-bold backdrop-blur-sm"
-                  >مد و استایل</span
+                  >پرفروش‌ترین</span
                 >
                 <h2 class="text-xl font-black leading-tight lg:text-2xl">
-                  رنگ سال ۲۰۲۶؛ سفید ابری (Cloud Dancer) یا فیروزه‌ای دگرگون‌کننده؟
+                  موتور برق‌های سایلنت؛ قدرت بالا بدون آلودگی صوتی
                 </h2>
               </div>
             </div>
@@ -257,49 +189,51 @@
             <div class="grid h-full grid-cols-2 gap-1 md:col-span-7">
               <div class="group relative h-40 cursor-pointer overflow-hidden md:h-auto">
                 <img
-                  src="https://www.digikala.com/mag/wp-content/uploads/2025/12/the-game-awards-2025-winners.jpg"
+                  alt="image"
+                  src="https://parinsanat.com/images/slider/hero-water-pump-desktop.webp"
                   class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
                 <div class="absolute bottom-0 right-0 w-full p-4 text-white">
                   <h3 class="line-clamp-2 text-sm font-bold leading-snug">
-                    اکسپدیشن ۳۳ بهترین بازی سال شد؛ فهرست کامل برندگان
+                    انواع پمپ آب خانگی و صنعتی با گارانتی معتبر
                   </h3>
                 </div>
               </div>
 
               <div class="group relative h-40 cursor-pointer overflow-hidden rounded-l-lg md:h-auto md:rounded-none">
                 <img
-                  src="https://www.digikala.com/mag/wp-content/uploads/2025/12/goldenglobe-2026-nominees.jpg"
+                  alt="image"
+                  src="https://parinsanat.com/images/slider/hero-tools-desktop.webp"
                   class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
                 <div class="absolute bottom-0 right-0 w-full p-4 text-white">
                   <h3 class="line-clamp-2 text-sm font-bold leading-snug">
-                    نامزدهای گلدن گلوب ۲۰۲۶ اعلام شدند؛ حضور فیلم پناهی
+                    تجهیز کارگاه خود را با ابزارآلات حرفه‌ای تکمیل کنید
                   </h3>
                 </div>
               </div>
 
               <div class="group relative h-40 cursor-pointer overflow-hidden md:h-auto">
                 <img
-                  src="https://www.digikala.com/mag/wp-content/uploads/2025/12/best-home-water-purifier-iran-global-brands-1.jpg"
+                  alt="image"
+                  src="https://parinsanat.com/images/banners/home-installment-desktop.webp"
                   class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
                 <div class="absolute bottom-0 right-0 w-full p-4 text-white">
                   <h3 class="line-clamp-2 text-sm font-bold leading-snug">
-                    بهترین دستگاه تصفیه آب خانگی؛ بررسی برندهای برتر
+                    فروش اقساطی انواع دیزل ژنراتور و تجهیزات سنگین
                   </h3>
                 </div>
               </div>
 
               <div class="group relative h-40 cursor-pointer overflow-hidden rounded-bl-lg md:h-auto">
                 <img
-                  src="https://www.digikala.com/mag/wp-content/uploads/2025/12/Netflix_Warner.jpg"
+                  alt="image"
+                  src="https://parinsanat.com/images/banners/modern-agri-tools.jpg"
                   class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
                 <div class="absolute bottom-0 right-0 w-full p-4 text-white">
-                  <h3 class="line-clamp-2 text-sm font-bold leading-snug">
-                    نت‌فلیکس در معامله‌ای ۸۲ میلیارد دلاری برادران وارنر را می‌خرد
-                  </h3>
+                  <h3 class="line-clamp-2 text-sm font-bold leading-snug">جدیدترین ادوات کشاورزی و باغبانی فصل</h3>
                 </div>
               </div>
             </div>
@@ -314,7 +248,7 @@
         </div>
 
         <div class="relative z-10 flex items-center gap-2 bg-[#fcfcfc] pl-0 pl-4">
-          <h3 class="text-xl font-bold text-gray-800">منتخب <span class="font-normal text-gray-500">سردبیر</span></h3>
+          <h3 class="text-xl font-bold text-gray-800">منتخب <span class="text-psBlue font-normal">سردبیر</span></h3>
         </div>
         <a href="#" class="relative z-10 bg-[#fcfcfc] pl-4 pr-0">
           <button
@@ -326,8 +260,13 @@
 
       <div class="group relative">
         <button
-          class="hover:text-dkRed absolute -left-5 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 translate-x-4 items-center justify-center rounded-full border border-gray-100 bg-white/90 text-gray-700 opacity-0 shadow-[0_4px_20px_rgba(0,0,0,0.12)] backdrop-blur-sm transition-all duration-300 hover:scale-110 group-hover:translate-x-0 group-hover:opacity-100">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          class="hover:text-psBlue absolute -left-5 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 translate-x-4 items-center justify-center rounded-full border border-gray-100 bg-white/90 text-gray-700 opacity-0 shadow-[0_4px_20px_rgba(0,0,0,0.12)] backdrop-blur-sm transition-all duration-300 hover:scale-110 group-hover:translate-x-0 group-hover:opacity-100">
+          <svg
+            xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
           </svg>
         </button>
@@ -335,27 +274,29 @@
         <div class="scrollbar-hide flex snap-x justify-between gap-4 overflow-x-auto px-1 pb-6 pt-2">
           <div
             class="group/card flex w-[280px] min-w-[280px] cursor-pointer snap-start flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
-            <div class="relative h-[160px] overflow-hidden rounded-t-lg">
+            <div class="relative h-[180px] overflow-hidden rounded-t-lg">
               <img
-                src="https://www.digikala.com/mag/wp-content/uploads/2025/12/68c0820b2e4b43cec3e9061c_resized-284x180.webp"
-                class="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-105"
-                alt="Post Image" />
+                alt="Article"
+                src="https://parinsanat.com/images/slider/hero-motor-silent-desktop.webp"
+                class="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-105" />
+              <span class="bg-psBlue absolute right-3 top-3 rounded-md px-2 py-1 text-[10px] font-bold text-white"
+                >راهنمای خرید</span
+              >
             </div>
             <div class="flex flex-grow flex-col justify-between p-4">
               <h4
-                class="group-hover/card:text-dkRed mb-4 line-clamp-2 text-sm font-bold leading-6 text-gray-700 transition-colors">
-                بازار دست‌دوم به آیفون ایر روی خوش نشان نمی‌دهد
+                class="group-hover/card:text-psBlue mb-3 line-clamp-2 text-sm font-bold leading-6 text-gray-700 transition-colors">
+                راهنمای انتخاب بهترین موتور برق برای مصارف خانگی و صنعتی
               </h4>
-              <div class="mt-auto flex items-center justify-between border-t border-gray-50 pt-4">
+              <div
+                class="mt-auto flex items-center justify-between border-t border-gray-100 pt-3 text-[11px] text-gray-400">
                 <div class="flex items-center gap-2">
-                  <img
-                    src="https://www.digikala.com/mag/wp-content/uploads/2018/02/Esfandiari-60x60.jpg"
-                    class="h-6 w-6 rounded-full opacity-70 grayscale" />
-                  <span class="text-[11px] text-gray-400">یوسف اسفندیاری</span>
+                  <i class="fa-solid fa-user-pen"></i>
+                  <span>تحریریه پارین صنعت</span>
                 </div>
-                <div class="flex items-center gap-1 text-[10px] text-gray-300">
-                  <span>🕒</span>
-                  <span>۱۴ آذر ۱۴۰۴</span>
+                <div class="flex items-center gap-1">
+                  <i class="fa-regular fa-clock"></i>
+                  <span>۵ دقیقه</span>
                 </div>
               </div>
             </div>
@@ -363,27 +304,29 @@
 
           <div
             class="group/card flex w-[280px] min-w-[280px] cursor-pointer snap-start flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
-            <div class="relative h-[160px] overflow-hidden rounded-t-lg">
+            <div class="relative h-[180px] overflow-hidden rounded-t-lg">
               <img
-                src="https://www.digikala.com/mag/wp-content/uploads/2025/12/best-time-to-take-acetylcysteine-effervescent-table-1-284x180.jpg"
-                class="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-105"
-                alt="Post Image" />
+                alt="Article"
+                src="https://parinsanat.com/images/slider/hero-tools-desktop.webp"
+                class="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-105" />
+              <span class="bg-psGreen absolute right-3 top-3 rounded-md px-2 py-1 text-[10px] font-bold text-white"
+                >نقد و بررسی</span
+              >
             </div>
             <div class="flex flex-grow flex-col justify-between p-4">
               <h4
-                class="group-hover/card:text-dkRed mb-4 line-clamp-2 text-sm font-bold leading-6 text-gray-700 transition-colors">
-                بهترین زمان مصرف قرص جوشان استیل سیستئین برای تاثیرگذاری بهتر
+                class="group-hover/card:text-psBlue mb-3 line-clamp-2 text-sm font-bold leading-6 text-gray-700 transition-colors">
+                نقد و بررسی دریل بتن کن رونیکس؛ قدرت در دستان شما
               </h4>
-              <div class="mt-auto flex items-center justify-between border-t border-gray-50 pt-4">
+              <div
+                class="mt-auto flex items-center justify-between border-t border-gray-100 pt-3 text-[11px] text-gray-400">
                 <div class="flex items-center gap-2">
-                  <img
-                    src="https://www.digikala.com/mag/wp-content/uploads/2025/09/0T3A3748-scaled-e1758107984660-60x60.jpg"
-                    class="h-6 w-6 rounded-full opacity-70 grayscale" />
-                  <span class="text-[11px] text-gray-400">مریم بابایی</span>
+                  <i class="fa-solid fa-user-pen"></i>
+                  <span>مهندس احمدی</span>
                 </div>
-                <div class="flex items-center gap-1 text-[10px] text-gray-300">
-                  <span>🕒</span>
-                  <span>۱۳ آذر ۱۴۰۴</span>
+                <div class="flex items-center gap-1">
+                  <i class="fa-regular fa-clock"></i>
+                  <span>۸ دقیقه</span>
                 </div>
               </div>
             </div>
@@ -391,27 +334,29 @@
 
           <div
             class="group/card flex w-[280px] min-w-[280px] cursor-pointer snap-start flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
-            <div class="relative h-[160px] overflow-hidden rounded-t-lg">
+            <div class="relative h-[180px] overflow-hidden rounded-t-lg">
               <img
-                src="https://www.digikala.com/mag/wp-content/uploads/2025/12/15-common-mistakes-air-purifier-buying-guide-1-284x180.jpg"
-                class="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-105"
-                alt="Post Image" />
+                alt="Article"
+                src="https://parinsanat.com/images/slider/hero-water-pump-desktop.webp"
+                class="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-105" />
+              <span class="bg-psBlue absolute right-3 top-3 rounded-md px-2 py-1 text-[10px] font-bold text-white"
+                >آموزشی</span
+              >
             </div>
             <div class="flex flex-grow flex-col justify-between p-4">
               <h4
-                class="group-hover/card:text-dkRed mb-4 line-clamp-2 text-sm font-bold leading-6 text-gray-700 transition-colors">
-                ۱۵ اشتباه رایج در خرید دستگاه تصفیه هوا برای منزل
+                class="group-hover/card:text-psBlue mb-3 line-clamp-2 text-sm font-bold leading-6 text-gray-700 transition-colors">
+                تفاوت پمپ آب جتی و بشقابی؛ کدام برای شما مناسب است؟
               </h4>
-              <div class="mt-auto flex items-center justify-between border-t border-gray-50 pt-4">
+              <div
+                class="mt-auto flex items-center justify-between border-t border-gray-100 pt-3 text-[11px] text-gray-400">
                 <div class="flex items-center gap-2">
-                  <img
-                    src="https://www.digikala.com/mag/wp-content/uploads/2025/05/photo_2025-05-13_15-34-21-60x60.jpg"
-                    class="h-6 w-6 rounded-full opacity-70 grayscale" />
-                  <span class="text-[11px] text-gray-400">آبان فرزیان</span>
+                  <i class="fa-solid fa-user-pen"></i>
+                  <span>مهندس کریمی</span>
                 </div>
-                <div class="flex items-center gap-1 text-[10px] text-gray-300">
-                  <span>🕒</span>
-                  <span>۱۱ آذر ۱۴۰۴</span>
+                <div class="flex items-center gap-1">
+                  <i class="fa-regular fa-clock"></i>
+                  <span>۶ دقیقه</span>
                 </div>
               </div>
             </div>
@@ -419,27 +364,29 @@
 
           <div
             class="group/card flex w-[280px] min-w-[280px] cursor-pointer snap-start flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
-            <div class="relative h-[160px] overflow-hidden rounded-t-lg">
+            <div class="relative h-[180px] overflow-hidden rounded-t-lg">
               <img
-                src="https://www.digikala.com/mag/wp-content/uploads/2025/11/Best-selling-sunglasses-on-Black-Friday-1404-Digikala8ث4-284x180.jpg"
-                class="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-105"
-                alt="Post Image" />
+                alt="Article"
+                src="https://parinsanat.com/images/banners/home-installment-desktop.webp"
+                class="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-105" />
+              <span class="absolute right-3 top-3 rounded-md bg-orange-500 px-2 py-1 text-[10px] font-bold text-white"
+                >مقایسه</span
+              >
             </div>
             <div class="flex flex-grow flex-col justify-between p-4">
               <h4
-                class="group-hover/card:text-dkRed mb-4 line-clamp-2 text-sm font-bold leading-6 text-gray-700 transition-colors">
-                پرفروش‌ترین عینک آفتابی بلک فرایدی ۱۴۰۴ دیجی‌کالا
+                class="group-hover/card:text-psBlue mb-3 line-clamp-2 text-sm font-bold leading-6 text-gray-700 transition-colors">
+                مقایسه دیزل ژنراتورهای پرفروش بازار؛ کدام را بخریم؟
               </h4>
-              <div class="mt-auto flex items-center justify-between border-t border-gray-50 pt-4">
+              <div
+                class="mt-auto flex items-center justify-between border-t border-gray-100 pt-3 text-[11px] text-gray-400">
                 <div class="flex items-center gap-2">
-                  <img
-                    src="https://www.digikala.com/mag/wp-content/uploads/2023/11/PicsArt_11-18-04.01.05-60x60.png"
-                    class="h-6 w-6 rounded-full opacity-70 grayscale" />
-                  <span class="text-[11px] text-gray-400">زهرا سهرابی‌پور</span>
+                  <i class="fa-solid fa-user-pen"></i>
+                  <span>تیم فنی</span>
                 </div>
-                <div class="flex items-center gap-1 text-[10px] text-gray-300">
-                  <span>🕒</span>
-                  <span>۹ آذر ۱۴۰۴</span>
+                <div class="flex items-center gap-1">
+                  <i class="fa-regular fa-clock"></i>
+                  <span>۱۰ دقیقه</span>
                 </div>
               </div>
             </div>
@@ -447,27 +394,29 @@
 
           <div
             class="group/card flex w-[280px] min-w-[280px] cursor-pointer snap-start flex-col rounded-lg border border-gray-100 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md">
-            <div class="relative h-[160px] overflow-hidden rounded-t-lg">
+            <div class="relative h-[180px] overflow-hidden rounded-t-lg">
               <img
-                src="https://www.digikala.com/mag/wp-content/uploads/2025/11/imported-cars-sale-azar1404-guide-284x180.jpg"
-                class="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-105"
-                alt="Post Image" />
+                alt="Article"
+                src="https://parinsanat.com/images/banners/modern-agri-tools.jpg"
+                class="h-full w-full object-cover transition-transform duration-500 group-hover/card:scale-105" />
+              <span class="bg-psGreen absolute right-3 top-3 rounded-md px-2 py-1 text-[10px] font-bold text-white"
+                >کشاورزی</span
+              >
             </div>
             <div class="flex flex-grow flex-col justify-between p-4">
               <h4
-                class="group-hover/card:text-dkRed mb-4 line-clamp-2 text-sm font-bold leading-6 text-gray-700 transition-colors">
-                سامانه خودروهای وارداتی آذر ۱۴۰۴؛ راهنمای ثبت‌نام و جدول سود
+                class="group-hover/card:text-psBlue mb-3 line-clamp-2 text-sm font-bold leading-6 text-gray-700 transition-colors">
+                بهترین زمان سمپاشی درختان میوه + معرفی سمپاش‌های مناسب
               </h4>
-              <div class="mt-auto flex items-center justify-between border-t border-gray-50 pt-4">
+              <div
+                class="mt-auto flex items-center justify-between border-t border-gray-100 pt-3 text-[11px] text-gray-400">
                 <div class="flex items-center gap-2">
-                  <img
-                    src="https://www.digikala.com/mag/wp-content/uploads/2025/07/کیان-سیسان-2-60x60.jpg"
-                    class="h-6 w-6 rounded-full opacity-70 grayscale" />
-                  <span class="text-[11px] text-gray-400">کیان سیسان</span>
+                  <i class="fa-solid fa-user-pen"></i>
+                  <span>تیم کشاورزی</span>
                 </div>
-                <div class="flex items-center gap-1 text-[10px] text-gray-300">
-                  <span>🕒</span>
-                  <span>۹ آذر ۱۴۰۴</span>
+                <div class="flex items-center gap-1">
+                  <i class="fa-regular fa-clock"></i>
+                  <span>۴ دقیقه</span>
                 </div>
               </div>
             </div>
@@ -475,10 +424,11 @@
         </div>
       </div>
     </section>
+
     <section class="mx-auto mb-20 mt-16 w-[80%] max-w-[1600px]">
       <div class="mb-6 flex items-center justify-between border-b border-gray-100 pb-4">
-        <h3 class="border-dkRed border-r-4 pr-3 text-lg font-bold text-gray-800">
-          جدیدترین <span class="font-normal text-gray-500">ویدیوها</span>
+        <h3 class="border-psBlue border-r-4 pr-3 text-lg font-bold text-gray-800">
+          پرخواننده‌ترین <span class="font-normal text-gray-500">مقالات</span>
         </h3>
       </div>
 
@@ -487,46 +437,50 @@
           <div class="rounded-lg bg-[#fcfcfc]">
             <div class="flex flex-col">
               <div
-                class="border-dkRed group flex cursor-pointer items-start justify-between border-r-4 bg-gray-50 p-4 transition-colors hover:bg-gray-100">
+                class="border-psBlue group flex cursor-pointer items-start justify-between border-r-4 bg-gray-50 p-4 transition-colors hover:bg-gray-100">
                 <div class="flex-grow pl-3">
                   <h4
-                    class="group-hover:text-dkRed line-clamp-2 text-xs font-bold leading-6 text-gray-700 transition-colors">
-                    ببینید؛ دنباله‌ی «کیل بیل» یک فیلم انیمیشنی در فورتنایت است!
+                    class="group-hover:text-psBlue line-clamp-2 text-xs font-bold leading-6 text-gray-700 transition-colors">
+                    راهنمای کامل انتخاب موتور برق؛ از خانگی تا صنعتی
                   </h4>
-                  <div class="mt-2 flex items-center gap-1 text-[10px] text-gray-400">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-3 w-3"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
+                  <div class="mt-2 flex items-center gap-2 text-[11px] text-gray-400">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>۱۲ دقیقه مطالعه</span>
+                    <span class="mx-1">•</span>
+                    <span>۲ روز پیش</span>
+                  </div>
+                </div>
+                <div
+                  class="relative h-[58px] w-[86px] flex-shrink-0 overflow-hidden rounded border border-gray-100 bg-white">
+                  <img
+                    alt="image"
+                    src="https://parinsanat.com/images/slider/hero-motor-silent-desktop.webp"
+                    class="h-full w-full object-cover" />
+                </div>
+              </div>
+
+              <div class="flex justify-center py-2 text-xs tracking-widest text-gray-300">...</div>
+
+              <div
+                class="group flex cursor-pointer items-start justify-between border-r-4 border-transparent p-4 transition-colors hover:border-gray-300 hover:bg-gray-50">
+                <div class="flex-grow pl-3">
+                  <h4
+                    class="group-hover:text-psBlue line-clamp-2 text-xs font-bold leading-6 text-gray-600 transition-colors">
+                    نحوه نگهداری از کارواش صنعتی برای افزایش طول عمر
+                  </h4>
+                  <div class="mt-2 flex items-center gap-2 text-[11px] text-gray-400">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>۸ دقیقه مطالعه</span>
+                    <span class="mx-1">•</span>
                     <span>۱ هفته قبل</span>
                   </div>
                 </div>
-                <div class="relative h-[58px] w-[86px] flex-shrink-0 overflow-hidden rounded">
+                <div
+                  class="relative h-[58px] w-[86px] flex-shrink-0 overflow-hidden rounded border border-gray-100 bg-white">
                   <img
-                    src="https://www.digikala.com/mag/wp-content/uploads/2025/11/FortniteYukisRevenger-60x60.jpg"
+                    alt="image"
+                    src="https://parinsanat.com/images/slider/hero-tools-desktop.webp"
                     class="h-full w-full object-cover" />
-                  <div class="absolute inset-0 flex items-center justify-center bg-black/20">
-                    <div class="bg-dkRed flex h-5 w-5 items-center justify-center rounded-full">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="ml-0.5 h-3 w-3 text-white"
-                        viewBox="0 0 20 20"
-                        fill="currentColor">
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </div>
-                  </div>
                 </div>
               </div>
 
@@ -536,89 +490,22 @@
                 class="group flex cursor-pointer items-start justify-between border-r-4 border-transparent p-4 transition-colors hover:border-gray-300 hover:bg-gray-50">
                 <div class="flex-grow pl-3">
                   <h4
-                    class="group-hover:text-dkRed line-clamp-2 text-xs font-bold leading-6 text-gray-600 transition-colors">
-                    اولین تریلر فیلم سوپر ماریو گلکسی از دنباله‌ای شگفت‌انگیز خبر می‌دهد
+                    class="group-hover:text-psBlue line-clamp-2 text-xs font-bold leading-6 text-gray-600 transition-colors">
+                    ۵ نکته مهم در انتخاب پمپ آب برای آبیاری باغ و مزرعه
                   </h4>
-                  <div class="mt-2 flex items-center gap-1 text-[10px] text-gray-400">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-3 w-3"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span>۱ ماه قبل</span>
+                  <div class="mt-2 flex items-center gap-2 text-[11px] text-gray-400">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>۶ دقیقه مطالعه</span>
+                    <span class="mx-1">•</span>
+                    <span>۲ هفته قبل</span>
                   </div>
                 </div>
-                <div class="relative h-[58px] w-[86px] flex-shrink-0 overflow-hidden rounded">
+                <div
+                  class="relative h-[58px] w-[86px] flex-shrink-0 overflow-hidden rounded border border-gray-100 bg-white">
                   <img
-                    src="https://www.digikala.com/mag/wp-content/uploads/2025/11/SuperMarioGalaxyMovieTrailer-60x60.jpg"
+                    alt="image"
+                    src="https://parinsanat.com/images/slider/hero-water-pump-desktop.webp"
                     class="h-full w-full object-cover" />
-                  <div class="absolute inset-0 flex items-center justify-center bg-black/20">
-                    <div class="bg-dkRed/80 flex h-5 w-5 items-center justify-center rounded-full">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="ml-0.5 h-3 w-3 text-white"
-                        viewBox="0 0 20 20"
-                        fill="currentColor">
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="flex justify-center py-2 text-xs tracking-widest text-gray-300">...</div>
-
-              <div
-                class="group flex cursor-pointer items-start justify-between border-r-4 border-transparent p-4 transition-colors hover:border-gray-300 hover:bg-gray-50">
-                <div class="flex-grow pl-3">
-                  <h4
-                    class="group-hover:text-dkRed line-clamp-2 text-xs font-bold leading-6 text-gray-600 transition-colors">
-                    تریلر نسخه‌ی چهار ساعته‌ی «بیل را بکش» خشن و بدون سانسور است
-                  </h4>
-                  <div class="mt-2 flex items-center gap-1 text-[10px] text-gray-400">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-3 w-3"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span>۱ ماه قبل</span>
-                  </div>
-                </div>
-                <div class="relative h-[58px] w-[86px] flex-shrink-0 overflow-hidden rounded">
-                  <img
-                    src="https://www.digikala.com/mag/wp-content/uploads/2025/11/Kill_Bill_The_Whole_Bloody_Affair-60x60.jpg"
-                    class="h-full w-full object-cover" />
-                  <div class="absolute inset-0 flex items-center justify-center bg-black/20">
-                    <div class="bg-dkRed/80 flex h-5 w-5 items-center justify-center rounded-full">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="ml-0.5 h-3 w-3 text-white"
-                        viewBox="0 0 20 20"
-                        fill="currentColor">
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </div>
-                  </div>
                 </div>
               </div>
 
@@ -628,25 +515,9 @@
 
           <div class="mt-auto flex items-center justify-between pt-4">
             <button
-              class="hover:text-dkRed flex items-center gap-2 rounded border border-gray-200 px-4 py-2 text-xs font-bold text-gray-500 transition-colors hover:bg-gray-50">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              ویدیوهای بیشتر
+              class="hover:text-psBlue flex items-center gap-2 rounded border border-gray-200 px-4 py-2 text-xs font-bold text-gray-500 transition-colors hover:bg-gray-50">
+              <i class="fa-solid fa-newspaper"></i>
+              مشاهده همه مقالات
             </button>
           </div>
         </div>
@@ -654,91 +525,41 @@
         <div class="lg:col-span-8">
           <div class="group relative aspect-video w-full cursor-pointer overflow-hidden rounded-lg bg-black shadow-sm">
             <img
-              src="https://www.digikala.com/mag/wp-content/uploads/2025/11/FortniteYukisRevenger.jpg"
+              alt="image"
+              src="https://static.cdn.asset.aparat.cloud/avt/64627113-3457-l__1610.jpg?width=900&quality=90&secret=D-M9LvRNw2HAbIVsudTF7w"
               class="h-full w-full object-cover opacity-90 transition-opacity group-hover:opacity-100" />
 
             <div class="absolute inset-0 flex items-center justify-center">
               <div
-                class="group-hover:bg-dkRed/90 flex h-16 w-16 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm transition-colors duration-300">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="ml-1 h-8 w-8 text-white"
-                  viewBox="0 0 20 20"
-                  fill="currentColor">
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                    clip-rule="evenodd" />
-                </svg>
+                class="group-hover:bg-psBlue/90 flex h-16 w-16 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm transition-colors duration-300">
+                <i class="fa-solid fa-play text-2xl text-white"></i>
               </div>
             </div>
           </div>
 
           <div class="mt-6 px-4 text-center md:px-12">
             <h2 class="mb-4 text-xl font-bold leading-tight text-gray-800 md:text-2xl">
-              ببینید؛ دنباله‌ی «کیل بیل» یک فیلم انیمیشنی در فورتنایت است!
+              ویدیوهای آموزشی و معرفی تجهیزات صنعتی
             </h2>
 
-            <div class="bg-dkBlue mx-auto mb-4 h-1 w-16 rounded-full"></div>
+            <div class="bg-psBlue mx-auto mb-4 h-1 w-16 rounded-full"></div>
 
             <p class="mb-4 text-justify text-sm leading-7 text-gray-500">
-              فیلم دو قسمتی «بیل را بکش» یا همان «کیل بیل» (Kill Bill) کوئنتین تارانتینو قرار است به‌زودی در سینماهای
-              امریکا در قالب یک نسخه‌ی چهار ساعته‌ی کامل و بدون سانسور اکران شود. به همین مناسبت، فورتنایت هم میزبان یک
-              همکاری با کوئنتین تارانتینو و کیل بیل خواهد بود...
-              <a href="#" class="text-dkBlue mr-1 inline-block font-bold hover:underline">بیشتر بخوانید</a>
+              در این بخش ویدیوهای آموزشی، نقد و بررسی تجهیزات صنعتی و راهنمای استفاده از محصولات مختلف را مشاهده کنید.
+              از نحوه نگهداری موتور برق تا انتخاب بهترین پمپ آب برای نیازهای مختلف...
+              <a href="#" class="text-psBlue mr-1 inline-block font-bold hover:underline">مشاهده همه ویدیوها</a>
             </p>
-          </div>
-
-          <div class="mt-6 flex items-center justify-between border-t border-gray-100 px-4 pt-4">
-            <div class="flex items-center gap-1 text-xs text-gray-400">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-              </svg>
-              <span>۰</span>
-            </div>
-
-            <div class="flex items-center gap-4">
-              <div class="flex items-center gap-1 text-xs text-gray-400">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-3 w-3"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span>۱ هفته قبل</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="text-xs font-bold text-gray-500">امیرحسین میرزایی</span>
-                <img
-                  src="https://www.digikala.com/mag/wp-content/uploads/2016/12/Amir-Mirzaee-500x500-60x60.jpg"
-                  class="h-8 w-8 rounded-full object-cover" />
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </section>
+
     <section class="mx-auto mb-20 mt-12 w-[80%] max-w-[1600px]">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-12">
         <div class="lg:col-span-9">
           <div class="mb-6 flex items-center justify-between border-b border-gray-100 pb-4">
-            <h3 class="border-dkRed border-r-4 pr-3 text-lg font-bold text-gray-800">
-              جدیدترین <span class="font-normal text-gray-500">اخبار و مقاله‌ها</span>
+            <h3 class="border-psBlue border-r-4 pr-3 text-lg font-bold text-gray-800">
+              مقالات و <span class="font-normal text-gray-500">راهنمای خرید</span>
             </h3>
           </div>
 
@@ -747,44 +568,32 @@
               class="group flex h-full cursor-pointer flex-col overflow-hidden rounded-lg border border-gray-50 bg-white shadow-sm transition-all duration-300 hover:shadow-md">
               <div class="relative aspect-[16/11] overflow-hidden">
                 <img
-                  src="https://www.digikala.com/mag/wp-content/uploads/2025/12/best-home-water-purifier-iran-global-brands-1.jpg"
+                  alt="image"
+                  src="https://parinsanat.com/images/slider/hero-motor-silent-desktop.webp"
                   class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:blur-[1px]" />
 
                 <div
                   class="absolute inset-0 flex flex-col justify-between bg-black/60 p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <span class="bg-dkBlue self-start rounded-md px-3 py-1.5 text-[11px] font-bold text-white">
-                    خانه و زندگی
+                  <span class="bg-psBlue self-start rounded-md px-3 py-1.5 text-[11px] font-bold text-white">
+                    راهنمای خرید
                   </span>
                   <div class="flex items-center gap-1 text-xs font-bold text-white">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-4 w-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
+                    <i class="fa-regular fa-clock"></i>
                     <span>۶ دقیقه مطالعه</span>
                   </div>
                 </div>
               </div>
               <div class="flex flex-grow flex-col justify-between p-3">
                 <h3
-                  class="group-hover:text-dkRed mb-4 line-clamp-3 text-[13px] font-bold leading-6 text-gray-700 transition-colors">
-                  بهترین پمپ آب خانگی بی‌صدا ۱۴۰۴؛ بررسی ۵ مدل پرفروش و محبوب در بازار ایران
+                  class="group-hover:text-psBlue mb-4 line-clamp-3 text-[13px] font-bold leading-6 text-gray-700 transition-colors">
+                  راهنمای خرید بهترین موتور برق خانگی؛ بررسی مدل‌های بی صدا
                 </h3>
                 <div class="flex items-center justify-between border-t border-gray-50 pt-3 text-[10px] text-gray-400">
                   <div class="flex items-center gap-2">
-                    <img
-                      src="https://www.digikala.com/mag/wp-content/uploads/2024/08/Fateme_Hassan_Aghaei-60x60.jpg"
-                      class="h-6 w-6 rounded-full opacity-70 grayscale" />
-                    <span>فاطمه حسن‌ آقائی</span>
+                    <i class="fa-solid fa-user-pen"></i>
+                    <span>تحریریه پارین صنعت</span>
                   </div>
-                  <span>۳۰ دقیقه قبل</span>
+                  <span>۲ روز پیش</span>
                 </div>
               </div>
             </article>
@@ -793,43 +602,31 @@
               class="group flex h-full cursor-pointer flex-col overflow-hidden rounded-lg border border-gray-50 bg-white shadow-sm transition-all duration-300 hover:shadow-md">
               <div class="relative aspect-[16/11] overflow-hidden">
                 <img
-                  src="https://www.digikala.com/mag/wp-content/uploads/2025/12/Star-Wars-Fate-of-the-Old-Republic-284x180.jpg"
+                  alt="image"
+                  src="https://parinsanat.com/images/slider/hero-water-pump-desktop.webp"
                   class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:blur-[1px]" />
                 <div
                   class="absolute inset-0 flex flex-col justify-between bg-black/60 p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <span class="bg-dkBlue self-start rounded-md px-3 py-1.5 text-[11px] font-bold text-white"
-                    >بازی و سرگرمی</span
+                  <span class="bg-psBlue self-start rounded-md px-3 py-1.5 text-[11px] font-bold text-white"
+                    >فنی و مهندسی</span
                   >
                   <div class="flex items-center gap-1 text-xs font-bold text-white">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-4 w-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span>۴ دقیقه مطالعه</span>
+                    <i class="fa-regular fa-clock"></i>
+                    <span>۸ دقیقه مطالعه</span>
                   </div>
                 </div>
               </div>
               <div class="flex flex-grow flex-col justify-between p-3">
                 <h3
-                  class="group-hover:text-dkRed mb-4 line-clamp-3 text-[13px] font-bold leading-6 text-gray-700 transition-colors">
-                  از بازی Star Wars: Fate of the Old Republic رونمایی شد؛ بازگشت کارگردان قسمت اول
+                  class="group-hover:text-psBlue mb-4 line-clamp-3 text-[13px] font-bold leading-6 text-gray-700 transition-colors">
+                  تفاوت پمپ آب جتی و بشقابی؛ کدام برای ساختمان شما مناسب است؟
                 </h3>
                 <div class="flex items-center justify-between border-t border-gray-50 pt-3 text-[10px] text-gray-400">
                   <div class="flex items-center gap-2">
-                    <img
-                      src="https://www.digikala.com/mag/wp-content/uploads/2024/05/Vahid_Golbad_1-60x60.jpg"
-                      class="h-6 w-6 rounded-full opacity-70 grayscale" />
-                    <span>وحید گلباد</span>
+                    <i class="fa-solid fa-user-pen"></i>
+                    <span>مهندس کریمی</span>
                   </div>
-                  <span>۱ ساعت قبل</span>
+                  <span>۱ هفته قبل</span>
                 </div>
               </div>
             </article>
@@ -838,41 +635,29 @@
               class="group flex h-full cursor-pointer flex-col overflow-hidden rounded-lg border border-gray-50 bg-white shadow-sm transition-all duration-300 hover:shadow-md">
               <div class="relative aspect-[16/11] overflow-hidden">
                 <img
-                  src="https://www.digikala.com/mag/wp-content/uploads/2025/12/Saros-284x180.jpg"
+                  alt="image"
+                  src="https://parinsanat.com/images/banners/modern-agri-tools.jpg"
                   class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:blur-[1px]" />
                 <div
                   class="absolute inset-0 flex flex-col justify-between bg-black/60 p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <span class="bg-dkBlue self-start rounded-md px-3 py-1.5 text-[11px] font-bold text-white"
-                    >عمومی</span
+                  <span class="bg-psBlue self-start rounded-md px-3 py-1.5 text-[11px] font-bold text-white"
+                    >کشاورزی</span
                   >
                   <div class="flex items-center gap-1 text-xs font-bold text-white">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-4 w-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span>۲ دقیقه مطالعه</span>
+                    <i class="fa-regular fa-clock"></i>
+                    <span>۵ دقیقه مطالعه</span>
                   </div>
                 </div>
               </div>
               <div class="flex flex-grow flex-col justify-between p-3">
                 <h3
-                  class="group-hover:text-dkRed mb-4 line-clamp-3 text-[13px] font-bold leading-6 text-gray-700 transition-colors">
-                  انتشار بازی ساروس تا اردیبهشت آینده تاخیر خورد؛ تریلر جدید آن را ببینید
+                  class="group-hover:text-psBlue mb-4 line-clamp-3 text-[13px] font-bold leading-6 text-gray-700 transition-colors">
+                  بهترین زمان سمپاشی درختان میوه + معرفی سمپاش‌های مناسب
                 </h3>
                 <div class="flex items-center justify-between border-t border-gray-50 pt-3 text-[10px] text-gray-400">
                   <div class="flex items-center gap-2">
-                    <img
-                      src="https://www.digikala.com/mag/wp-content/uploads/2024/05/Vahid_Golbad_1-60x60.jpg"
-                      class="h-6 w-6 rounded-full opacity-70 grayscale" />
-                    <span>وحید گلباد</span>
+                    <i class="fa-solid fa-user-pen"></i>
+                    <span>تیم کشاورزی</span>
                   </div>
                   <span>۳ ساعت قبل</span>
                 </div>
@@ -883,217 +668,31 @@
               class="group flex h-full cursor-pointer flex-col overflow-hidden rounded-lg border border-gray-50 bg-white shadow-sm transition-all duration-300 hover:shadow-md">
               <div class="relative aspect-[16/11] overflow-hidden">
                 <img
-                  src="https://www.digikala.com/mag/wp-content/uploads/2025/12/Untitled-2-4-284x180.jpg"
+                  alt="image"
+                  src="https://parinsanat.com/images/slider/hero-tools-desktop.webp"
                   class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:blur-[1px]" />
                 <div
                   class="absolute inset-0 flex flex-col justify-between bg-black/60 p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <span class="bg-dkBlue self-start rounded-md px-3 py-1.5 text-[11px] font-bold text-white"
-                    >موبایل</span
+                  <span class="bg-psBlue self-start rounded-md px-3 py-1.5 text-[11px] font-bold text-white"
+                    >ابزارآلات</span
                   >
                   <div class="flex items-center gap-1 text-xs font-bold text-white">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-4 w-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span>۱۰ دقیقه مطالعه</span>
-                  </div>
-                </div>
-              </div>
-              <div class="flex flex-grow flex-col justify-between p-3">
-                <h3
-                  class="group-hover:text-dkRed mb-4 line-clamp-3 text-[13px] font-bold leading-6 text-gray-700 transition-colors">
-                  نقد و بررسی موتورولا اج ۶۰ پرو؛ زیبا، باکیفیت و پرقدرت!
-                </h3>
-                <div class="flex items-center justify-between border-t border-gray-50 pt-3 text-[10px] text-gray-400">
-                  <div class="flex items-center gap-2">
-                    <img
-                      src="https://www.digikala.com/mag/wp-content/uploads/2021/10/20201129_214940-60x60.jpg"
-                      class="h-6 w-6 rounded-full opacity-70 grayscale" />
-                    <span>حمیدرضا داوریان</span>
-                  </div>
-                  <span>۱۴ ساعت قبل</span>
-                </div>
-              </div>
-            </article>
-
-            <article
-              class="group flex h-full cursor-pointer flex-col overflow-hidden rounded-lg border border-gray-50 bg-white shadow-sm transition-all duration-300 hover:shadow-md">
-              <div class="relative aspect-[16/11] overflow-hidden">
-                <img
-                  src="https://www.digikala.com/mag/wp-content/uploads/2025/12/Total-War-WARHAMMER-40000-284x180.jpg"
-                  class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:blur-[1px]" />
-                <div
-                  class="absolute inset-0 flex flex-col justify-between bg-black/60 p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <span class="bg-dkBlue self-start rounded-md px-3 py-1.5 text-[11px] font-bold text-white">بازی</span>
-                  <div class="flex items-center gap-1 text-xs font-bold text-white">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-4 w-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
+                    <i class="fa-regular fa-clock"></i>
                     <span>۴ دقیقه مطالعه</span>
                   </div>
                 </div>
               </div>
               <div class="flex flex-grow flex-col justify-between p-3">
                 <h3
-                  class="group-hover:text-dkRed mb-4 line-clamp-3 text-[13px] font-bold leading-6 text-gray-700 transition-colors">
-                  بازی استراتژی توتال وار: وارهمر 40K معرفی شد؛ تریلر آن را تماشا کنید
+                  class="group-hover:text-psBlue mb-4 line-clamp-3 text-[13px] font-bold leading-6 text-gray-700 transition-colors">
+                  نقد و بررسی دریل بتن کن رونیکس؛ غول تخریب در دستان شما
                 </h3>
                 <div class="flex items-center justify-between border-t border-gray-50 pt-3 text-[10px] text-gray-400">
                   <div class="flex items-center gap-2">
-                    <img
-                      src="https://www.digikala.com/mag/wp-content/uploads/2024/05/Vahid_Golbad_1-60x60.jpg"
-                      class="h-6 w-6 rounded-full opacity-70 grayscale" />
-                    <span>وحید گلباد</span>
+                    <i class="fa-solid fa-user-pen"></i>
+                    <span>بخش فنی</span>
                   </div>
-                  <span>۴ ساعت قبل</span>
-                </div>
-              </div>
-            </article>
-
-            <article
-              class="group flex h-full cursor-pointer flex-col overflow-hidden rounded-lg border border-gray-50 bg-white shadow-sm transition-all duration-300 hover:shadow-md">
-              <div class="relative aspect-[16/11] overflow-hidden">
-                <img
-                  src="https://www.digikala.com/mag/wp-content/uploads/2025/12/Stupid_Never_Dies-284x180.jpg"
-                  class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:blur-[1px]" />
-                <div
-                  class="absolute inset-0 flex flex-col justify-between bg-black/60 p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <span class="bg-dkBlue self-start rounded-md px-3 py-1.5 text-[11px] font-bold text-white">بازی</span>
-                  <div class="flex items-center gap-1 text-xs font-bold text-white">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-4 w-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span>۳ دقیقه مطالعه</span>
-                  </div>
-                </div>
-              </div>
-              <div class="flex flex-grow flex-col justify-between p-3">
-                <h3
-                  class="group-hover:text-dkRed mb-4 line-clamp-3 text-[13px] font-bold leading-6 text-gray-700 transition-colors">
-                  ببینید؛ «احمق هرگز نمی‌میرد» بازی عجیب و متفاوت تهیه‌کننده‌ی رزیدنت اویل است
-                </h3>
-                <div class="flex items-center justify-between border-t border-gray-50 pt-3 text-[10px] text-gray-400">
-                  <div class="flex items-center gap-2">
-                    <img
-                      src="https://www.digikala.com/mag/wp-content/uploads/2016/12/Amir-Mirzaee-500x500-60x60.jpg"
-                      class="h-6 w-6 rounded-full opacity-70 grayscale" />
-                    <span>امیرحسین میرزایی</span>
-                  </div>
-                  <span>۴ ساعت قبل</span>
-                </div>
-              </div>
-            </article>
-
-            <article
-              class="group flex h-full cursor-pointer flex-col overflow-hidden rounded-lg border border-gray-50 bg-white shadow-sm transition-all duration-300 hover:shadow-md">
-              <div class="relative aspect-[16/11] overflow-hidden">
-                <img
-                  src="https://www.digikala.com/mag/wp-content/uploads/2025/12/die-my-love-review-284x180.jpg"
-                  class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:blur-[1px]" />
-                <div
-                  class="absolute inset-0 flex flex-col justify-between bg-black/60 p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <span class="bg-dkBlue self-start rounded-md px-3 py-1.5 text-[11px] font-bold text-white"
-                    >نقد فیلم</span
-                  >
-                  <div class="flex items-center gap-1 text-xs font-bold text-white">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-4 w-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span>۷ دقیقه مطالعه</span>
-                  </div>
-                </div>
-              </div>
-              <div class="flex flex-grow flex-col justify-between p-3">
-                <h3
-                  class="group-hover:text-dkRed mb-4 line-clamp-3 text-[13px] font-bold leading-6 text-gray-700 transition-colors">
-                  نقد فیلم «بمیر عشق من» جنیفر لارنس؛ محکوم به نیستی
-                </h3>
-                <div class="flex items-center justify-between border-t border-gray-50 pt-3 text-[10px] text-gray-400">
-                  <div class="flex items-center gap-2">
-                    <img
-                      src="https://www.digikala.com/mag/wp-content/uploads/2015/08/Default_Profile_Picture1.jpg"
-                      class="h-6 w-6 rounded-full opacity-70 grayscale" />
-                    <span>نیما رمضانپور</span>
-                  </div>
-                  <span>۶ ساعت قبل</span>
-                </div>
-              </div>
-            </article>
-
-            <article
-              class="group flex h-full cursor-pointer flex-col overflow-hidden rounded-lg border border-gray-50 bg-white shadow-sm transition-all duration-300 hover:shadow-md">
-              <div class="relative aspect-[16/11] overflow-hidden">
-                <img
-                  src="https://www.digikala.com/mag/wp-content/uploads/2025/12/CONTROL-Resonant-284x180.jpg"
-                  class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:blur-[1px]" />
-                <div
-                  class="absolute inset-0 flex flex-col justify-between bg-black/60 p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <span class="bg-dkBlue self-start rounded-md px-3 py-1.5 text-[11px] font-bold text-white">بازی</span>
-                  <div class="flex items-center gap-1 text-xs font-bold text-white">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-4 w-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span>۲ دقیقه مطالعه</span>
-                  </div>
-                </div>
-              </div>
-              <div class="flex flex-grow flex-col justify-between p-3">
-                <h3
-                  class="group-hover:text-dkRed mb-4 line-clamp-3 text-[13px] font-bold leading-6 text-gray-700 transition-colors">
-                  دنباله‌ی کنترل با یک گیم‌پلی متفاوت معرفی شد؛ تریلر آن را تماشا کنید
-                </h3>
-                <div class="flex items-center justify-between border-t border-gray-50 pt-3 text-[10px] text-gray-400">
-                  <div class="flex items-center gap-2">
-                    <img
-                      src="https://www.digikala.com/mag/wp-content/uploads/2024/05/Vahid_Golbad_1-60x60.jpg"
-                      class="h-6 w-6 rounded-full opacity-70 grayscale" />
-                    <span>وحید گلباد</span>
-                  </div>
-                  <span>۵ ساعت قبل</span>
+                  <span>۱۴ ساعت قبل</span>
                 </div>
               </div>
             </article>
@@ -1103,21 +702,22 @@
         <div class="space-y-6 lg:col-span-3">
           <div class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
             <div class="flex items-center justify-between border-b border-gray-50 p-4">
-              <span class="border-dkBlue border-r-4 pr-2 text-xs font-bold text-gray-600"
-                >بلک فرایدی در دیجی‌کالا مگ</span
+              <span class="border-psBlue border-r-4 pr-2 text-xs font-bold text-gray-600"
+                >تازه های وبلاگ پارین صنعت</span
               >
             </div>
 
             <a href="#" class="group relative block">
               <div class="relative h-40 overflow-hidden">
                 <img
-                  src="https://www.digikala.com/mag/wp-content/uploads/2025/12/Gemini_Generated_Image_milqx9milqx9milq-150x150.jpg"
+                  alt="image"
+                  src="https://parinsanat.com/images/banners/sunverter.gif"
                   class="h-full w-full object-cover transition-transform group-hover:scale-105" />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               </div>
               <div class="p-3">
-                <h4 class="group-hover:text-dkRed text-xs font-bold leading-5 text-gray-700 transition-colors">
-                  ۶ تجهیزات ذخیره سازی برتر که در بلک فرایدی ۱۴۰۴ دیجی‌کالا می‌توانید بخرید
+                <h4 class="group-hover:text-psBlue text-xs font-bold leading-5 text-gray-700 transition-colors">
+                  مزایای استفاده از سانورتر در سیستم‌های خورشیدی آفگرید
                 </h4>
               </div>
             </a>
@@ -1125,50 +725,28 @@
             <div class="px-3 pb-2">
               <a href="#" class="group flex gap-3 border-t border-gray-50 py-3">
                 <img
-                  src="https://www.digikala.com/mag/wp-content/uploads/2025/11/best-womens-outfits-black-friday-digikala-16-60x60.jpg"
-                  class="h-14 w-14 flex-shrink-0 rounded object-cover" />
+                  alt="image"
+                  src="https://parinsanat.com/storage/images/product_medias/6911d60f860f9a59f407ac1d/1762776244-2132-PS.webp"
+                  class="h-14 w-14 flex-shrink-0 rounded border border-gray-100 object-contain p-1" />
                 <div class="flex flex-col justify-center">
                   <h5
-                    class="group-hover:text-dkRed line-clamp-2 text-[11px] font-medium leading-5 text-gray-600 transition-colors">
-                    کاربردی‌ترین استایل زنانه که در بلک فرایدی دیجی‌کالا می‌توانید بخرید
+                    class="group-hover:text-psBlue line-clamp-2 text-[11px] font-medium leading-5 text-gray-600 transition-colors">
+                    قیچی باغبانی شارژی؛ انقلابی در هرس درختان
                   </h5>
                   <span class="mt-1 text-[10px] text-gray-400">۱ هفته قبل</span>
                 </div>
               </a>
               <a href="#" class="group flex gap-3 border-t border-gray-50 py-3">
                 <img
-                  src="https://www.digikala.com/mag/wp-content/uploads/2025/11/skincare-products-on-discount-for-digikala-black-friday--60x60.jpg"
-                  class="h-14 w-14 flex-shrink-0 rounded object-cover" />
+                  alt="image"
+                  src="https://parinsanat.com/storage/images/product_medias/6935e63088aaec15f503aba2/1765138867-کارواش-صنعتی-۱۸۰-بار-کالسکه-ای-RP0181.webp"
+                  class="h-14 w-14 flex-shrink-0 rounded border border-gray-100 object-contain p-1" />
                 <div class="flex flex-col justify-center">
                   <h5
-                    class="group-hover:text-dkRed line-clamp-2 text-[11px] font-medium leading-5 text-gray-600 transition-colors">
-                    تا ۹۰% تخفیف برای محبوب‌ترین محصولات پوستی در کمپین بلک فرایدی
-                  </h5>
-                  <span class="mt-1 text-[10px] text-gray-400">۱ هفته قبل</span>
-                </div>
-              </a>
-              <a href="#" class="group flex gap-3 border-t border-gray-50 py-3">
-                <img
-                  src="https://www.digikala.com/mag/wp-content/uploads/2025/11/Best-selling-sunglasses-on-Black-Friday-1404-Digikala8ث4-60x60.jpg"
-                  class="h-14 w-14 flex-shrink-0 rounded object-cover" />
-                <div class="flex flex-col justify-center">
-                  <h5
-                    class="group-hover:text-dkRed line-clamp-2 text-[11px] font-medium leading-5 text-gray-600 transition-colors">
-                    پرفروش‌ترین عینک آفتابی بلک فرایدی ۱۴۰۴ دیجی‌کالا
+                    class="group-hover:text-psBlue line-clamp-2 text-[11px] font-medium leading-5 text-gray-600 transition-colors">
+                    راهنمای نگهداری از کارواش‌های صنعتی برای افزایش طول عمر
                   </h5>
                   <span class="mt-1 text-[10px] text-gray-400">۲ هفته قبل</span>
-                </div>
-              </a>
-              <a href="#" class="group flex gap-3 border-t border-gray-50 py-3">
-                <img
-                  src="https://www.digikala.com/mag/wp-content/uploads/2025/11/Gemini_Generated_Image_6fmkik6fmkik6fmk-60x60.jpg"
-                  class="h-14 w-14 flex-shrink-0 rounded object-cover" />
-                <div class="flex flex-col justify-center">
-                  <h5
-                    class="group-hover:text-dkRed line-clamp-2 text-[11px] font-medium leading-5 text-gray-600 transition-colors">
-                    ۶ هدفون برتر که در بلک فرایدی ۱۴۰۴ دیجی‌کالا می‌توانید بخرید
-                  </h5>
-                  <span class="mt-1 text-[10px] text-gray-400">۱ هفته قبل</span>
                 </div>
               </a>
             </div>
@@ -1176,17 +754,18 @@
         </div>
       </div>
     </section>
-    <footer class="border-dkRed/0 mt-20 border-t-4 bg-[#1c1c1c] pb-10 pt-10 font-sans text-white">
+
+    <footer class="border-psBlue bg-psDark mt-20 border-t-4 pb-10 pt-10 font-sans text-white">
       <div class="mx-auto w-[80%] max-w-[1600px]">
         <div
           class="mb-6 flex flex-col items-center justify-between gap-8 border-b border-[#333] pb-8 lg:flex-row lg:gap-0">
           <nav>
             <ul class="flex flex-wrap justify-center gap-8 text-[13px] font-bold text-gray-300 lg:justify-start">
-              <li><a href="#" class="transition-colors hover:text-white">دیجی‌کالا</a></li>
-              <li><a href="#" class="transition-colors hover:text-white">شرایط بازنشر</a></li>
-              <li><a href="#" class="transition-colors hover:text-white">فرصت‌های همکاری</a></li>
-              <li><a href="#" class="transition-colors hover:text-white">رفع مسؤولیت</a></li>
-              <li><a href="#" class="transition-colors hover:text-white">در دیجی‌کالا بفروشید</a></li>
+              <li><a href="#" class="transition-colors hover:text-white">درباره ما</a></li>
+              <li><a href="#" class="transition-colors hover:text-white">تماس با ما</a></li>
+              <li><a href="#" class="transition-colors hover:text-white">چرا پارین صنعت؟</a></li>
+              <li><a href="#" class="transition-colors hover:text-white">دریافت نمایندگی</a></li>
+              <li><a href="#" class="transition-colors hover:text-white">قوانین و مقررات</a></li>
             </ul>
           </nav>
 
@@ -1199,7 +778,7 @@
                 class="w-full rounded-r-md border border-transparent bg-[#424242] px-4 py-3 text-xs text-white placeholder-gray-400 transition-colors focus:bg-[#505050] focus:outline-none sm:w-72" />
               <button
                 type="submit"
-                class="rounded-l-md bg-[#53d2dc] px-8 py-3 text-sm font-bold text-white shadow-lg shadow-cyan-500/20 transition-colors hover:bg-[#45c0ca]">
+                class="bg-psBlue rounded-l-md px-8 py-3 text-sm font-bold text-white shadow-lg transition-colors hover:bg-sky-600">
                 عضویت
               </button>
             </form>
@@ -1208,34 +787,21 @@
 
         <div class="flex flex-col items-center justify-between gap-6 lg:flex-row">
           <p class="max-w-4xl text-center text-[11px] leading-6 text-gray-400 lg:text-right">
-            © هر گونه کپی‌برداری جزئی یا کلی از مطالب دیجی‌کالا مگ بدون کسب مجوز مکتوب ممنوع است. حقوق این سایت به شرکت
-            نوآوران فن‌آوازه (فروشگاه آنلاین دیجی‌کالا) تعلق دارد.
+            © کلیه حقوق مادی و معنوی برای پارین صنعت پاسارگاد محفوظ است.
           </p>
 
           <div class="flex items-center gap-6 text-white">
             <a href="#" class="transition-colors hover:text-gray-300">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.802 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.802 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.680.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
-              </svg>
+              <i class="fa-brands fa-instagram text-xl"></i>
             </a>
             <a href="#" class="transition-colors hover:text-gray-300">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.180-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
-              </svg>
+              <i class="fa-brands fa-twitter text-xl"></i>
             </a>
             <a href="#" class="transition-colors hover:text-gray-300">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-              </svg>
+              <i class="fa-brands fa-linkedin text-xl"></i>
             </a>
             <a href="#" class="transition-colors hover:text-gray-300">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S16.627 0 12 0zm-2 16.5v-9l6 4.5-6 4.5z" />
-              </svg>
+              <i class="fa-brands fa-facebook text-xl"></i>
             </a>
           </div>
         </div>

@@ -1,0 +1,32 @@
+/* ============================================
+   Parin Sanat Color Palette
+   ============================================ */
+
+:root {
+  /* Primary Colors */
+  --ps-blue: #0ea5e9;
+  --ps-red: #ef394e;
+  --ps-green: #10b981;
+  --ps-dark: #1c1c1c;
+  --ps-gray: #f8f8f8;
+
+  /* Text Colors */
+  --ps-text: #424750;
+  --ps-text-light: #666;
+  --ps-text-lighter: #999;
+  --ps-text-dark: #1c1c1c;
+
+  /* Background Colors */
+  --ps-bg: #ffffff;
+  --ps-bg-light: #f8f8f8;
+  --ps-bg-lighter: #f5f5f5;
+
+  /* Border Colors */
+  --ps-border: #e0e0e0;
+  --ps-border-light: #f0f0f0;
+
+  /* Shadows */
+  --ps-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --ps-shadow-md: 0 1px 5px rgba(0, 0, 0, 0.05);
+  --ps-shadow-card: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
+}
